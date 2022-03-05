@@ -56,7 +56,6 @@ switch (_loadout) do {
 // add secondary weapon
 switch (_loadout) do {
 	default {};
-
 	case "plt";
 	case "sqd_ld";
 	case "sqd_gre": {player addWeapon "rhs_weap_M320"};
@@ -90,7 +89,7 @@ switch (_loadout) do {
 // add secondary ammo
 //switch (_loadout) do {
 //	default {};
-};
+//};
 
 // add assistant ammo 
 switch (_loadout) do {

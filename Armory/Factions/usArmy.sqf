@@ -7,7 +7,6 @@ _loadout = lbData [1501, _indexLoadout];
 hint format ["%1 %2", _faction, _loadout];
 
 // removes all items from current loadout
-
 removeAllWeapons player;
 removeAllWeapons player;
 removeAllItems player;
@@ -20,49 +19,40 @@ removeHeadgear player;
  // add uniform
 switch (_loadout) do {
 	default { player forceAddUniform "rhs_uniform_cu_ocp"};
-	
 	case "pil": { player forceAddUniform "U_B_HeliPilotCoveralls"};
-	
 	case "ar_c": { player forceAddUniform "rhs_uniform_g3_mc"};
 };
 	
 // add helmet
 switch (_loadout) do {
 	default { player addHeadgear "rhsusf_ach_helmet_ocp_alt"};
-	
 	case "plt";
 	case "logi";
 	case "sqd_eng";
 	case "tacp": { player addHeadgear "rhsusf_ach_helmet_headset_ocp_alt"};
-
 	case "sqd_ar";
+	case "sqd_aar";
+	case "sup_mmg_l";
+	case "sup_mmg_g";
 	case "sqd_gre": { player addHeadgear "rhsusf_ach_helmet_ESS_ocp_alt"};
-
 	case "rcn_ld";
-	case "rcn_mem": { player addHeadgear "rhsusf_ach_helmet_camo_ocp"};
-
+	case "rcn_drone"
+	case "rcn_dmr": { player addHeadgear "rhsusf_ach_helmet_camo_ocp"};
 	case "ar_c": {player addHeadgear "rhsusf_cvc_ess"};
-	
 	case "pil": {player addHeadgear "rhsusf_hgu56p_visor_green"};
 };
 
 // add vest
 switch (_loadout) do {
 	default { player addVest "rhsusf_iotv_ocp_Rifleman"};
-	
 	case "plt";
 	case "sqd_ld": { player addVest "rhsusf_iotv_ocp_Squadleader"};
-
 	case "logi";
 	case "tacp": { player addVest "rhsusf_iotv_ocp_Teamleader"};
-
 	case "sqd_ar";
 	case "sqd_aar": { player addVest "rhsusf_iotv_ocp_SAW"};
-
 	case "sqd_gre": { player addVest "rhsusf_iotv_ocp_Grenadier"};
-
 	case "sqd_eng": { player addVest "rhsusf_iotv_ocp_Repair"};
-
 	case "ar_c";
 	case "pil": { player addVest "V_BandollierB_rgr"};
 };
@@ -70,13 +60,10 @@ switch (_loadout) do {
 // add backpack 
 switch (_loadout) do {
 	default { player addBackpack "rhsusf_assault_eagleaiii_ocp"};
-	
 	case "sqd_med": {player addBackpack "VSM_OCP_carryall"};
-	
 	case "sqd_eng";
 	case "sqd_ar";
 	case "sqd_aar": {player addBackpack "VSM_OCP_Backpack_Kitbag"};
-
 	case "ar_c";
 	case "pil": {};
 };
@@ -87,7 +74,6 @@ switch (_loadout) do {
 			  player addPrimaryWeaponItem "rhsusf_acc_ACOG_RMR";
 			  player addPrimaryWeaponItem "rhsusf_acc_SFMB556";
 			  player addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk"};
-	
 	case "plt";
 	case "sqd_ld";
 	case "rcn_ld";
@@ -95,19 +81,20 @@ switch (_loadout) do {
 					player addPrimaryWeaponItem "rhsusf_acc_ACOG_RMR";
 					player addPrimaryWeaponItem "rhsusf_acc_anpeq15side_bk";
 					player addPrimaryWeaponItem "rhsusf_acc_SFMB556"};
-
 	case "sqd_ar": {player addWeapon "rhs_weap_m249_pip";
 					player addPrimaryWeaponItem "optic_MRCO";
 					player addPrimaryWeaponItem "rhsusf_acc_SFMB556"};
-	
 	case "sqd_eng": {player addWeapon "UK3CB_BAF_L128A1"};
-
-	case "rcn_mem": {player addWeapon "rhs_weap_m14ebrri";
+	case "sqd_dmr": {player addWeapon "rhs_weap_m14ebrri";
+					 player addPrimaryWeaponItem "rhsusf_acc_ACOG_RMR";
+					 player addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
+					 player addPrimaryWeaponItem "rhsusf_acc_anpeq15side_bk";
+					 player addPrimaryWeaponItem "rhsusf_acc_m14_flashsuppresor"};	
+	case "rcn_dmr": {player addWeapon "rhs_weap_m14ebrri";
 					 player addPrimaryWeaponItem "rhsusf_acc_ACOG_MDO";
 					 player addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
 					 player addPrimaryWeaponItem "rhsusf_acc_anpeq15side_bk";
 					 player addPrimaryWeaponItem "rhsusf_acc_m14_flashsuppresor"};
-	
 	case "ar_c";
 	case "pil": {player addWeapon "UK3CB_BAF_L91A1"};
 };
@@ -127,31 +114,28 @@ switch (_loadout) do {
 		for "_i" from 1 to 4 do { player addItemToVest "rhs_mag_30Rnd_556x45_M855_Stanag"};
 		for "_i" from 1 to 4 do { player addItemToBackpack "rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red"};
 	};
-
 	case "sqd_ar": {
 		for "_i" from 1 to 2 do { player addItemToVest "rhsusf_200Rnd_556x45_M855_mixed_soft_pouch"};
 		for "_i" from 1 to 2 do { player addItemToBackpack "rhsusf_200Rnd_556x45_M855_mixed_soft_pouch"};
 	};
-
 	case "sqd_eng": {
 		for "_i" from 1 to 6 do { player addItemToVest "UK3CB_BAF_12G_Slugs"};
 		for "_i" from 1 to 6 do { player addItemToVest "UK3CB_BAF_12G_Pellets"};
 	};
-
-	case "rcn_mem": {
+	case "rcn_dmr": {
 		for "_i" from 1 to 4 do { player addItemToVest "rhsusf_20Rnd_762x51_m993_Mag"};
 		for "_i" from 1 to 4 do { player addItemToBackpack "rhsusf_20Rnd_762x51_m62_Mag"};
 	};
-
 	case "ar_c";
 	case "pil": {
 		for "_i" from 1 to 4 do { player addItemToVest "UK3CB_BAF_9_30Rnd"};
 	};
 };
+
 // add secondary ammo
-switch (_loadout) do {
-	default {};
-};
+//switch (_loadout) do {
+//	default {};
+//};
 
 // add assistant ammo 
 switch (_loadout) do {
@@ -160,7 +144,6 @@ switch (_loadout) do {
 		for "_i" from 1 to 4 do { player addItemToBackpack "rhsusf_200Rnd_556x45_M855_mixed_soft_pouch"};
 	};
 };
-
 
 // add other ammo 
 
@@ -177,7 +160,6 @@ switch (_loadout) do {
 // add 40mm grenades
 switch (_loadout) do {
 	default {};
-
 	case "plt": {
 		for "_i" from 1 to 5 do {player addItemToBackpack "1Rnd_HE_Grenade_shell"}; 
 		for "_i" from 1 to 2 do {player addItemToBackpack "1Rnd_Smoke_Grenade_shell"};
@@ -186,7 +168,6 @@ switch (_loadout) do {
 		for "_i" from 1 to 2 do {player addItemToBackpack "1Rnd_SmokeBlue_Grenade_shell"};
 		for "_i" from 1 to 2 do {player addItemToBackpack "UGL_FlareWhite_F"};
 	};
-
 	case "sqd_ld";
 	case "sqd_gre": {
 		for "_i" from 1 to 10 do {player addItemToBackpack "1Rnd_HE_Grenade_shell"};
@@ -196,31 +177,25 @@ switch (_loadout) do {
 		for "_i" from 1 to 2 do {player addItemToBackpack "1Rnd_SmokeBlue_Grenade_shell"};
 		for "_i" from 1 to 4 do {player addItemToBackpack "UGL_FlareWhite_F"};
 	};
-
 };
 
 // add radios
-
 switch (_loadout) do {
 	default { player addItemToUniform "ACRE_PRC343"};
-	
 	case "plt"; 
 	case "logi": { 
 		player addItemToUniform "ACRE_PRC152"; 
 		player addItemToBackpack "ACRE_PRC117F" 
 	};
-	
 	case "tacp": { 
 		player addItemToUniform "ACRE_PRC343"; 
 		player addItemToBackpack "ACRE_PRC117F" 
 	};
-	
 	case "sqd_ld";
 	case "rcn_ld":{
 		player addItemToUniform "ACRE_PRC343";
 		player addItemToUniform "ACRE_PRC152"
 	};
-	
 	case "pil": {};
 };
 
@@ -230,20 +205,16 @@ player linkItem "ItemCompass";
 player linkItem "ItemWatch";
 player linkItem "ItemGPS";
 player linkItem "ACE_NVG_Gen4_Black";
-
 player addItemToUniform "ACE_microDAGR"; 
 player addItemToUniform "ACE_IR_Strobe_Item"; 
 player addItemToUniform "ACE_Flashlight_XL50"; 
-
 player addItemToVest "ACE_MapTools";
 player addItemToVest "ACE_EarPlugs";
 player addItemToVest "ACE_CableTie";
 player addItemToVest "ACE_CableTie";
-
 player addItemToBackpack "ACE_EntrenchingTool";
 
 // add specialised gear
-
 switch (_loadout) do {
 	default { player addWeapon "rhsusf_bino_lrf_Vector21";};
 	case "plt";
@@ -252,7 +223,6 @@ switch (_loadout) do {
 		player addItemToBackpack "Laserbatteries";
 		player addItemToBackpack "Laserbatteries";
 	};
-
 };
 
 // add personal medical items

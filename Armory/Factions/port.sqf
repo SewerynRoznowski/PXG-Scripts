@@ -7,7 +7,6 @@ _loadout = lbData [1501, _indexLoadout];
 hint format ["%1 %2", _faction, _loadout];
 
 // removes all items from current loadout
-
 removeAllWeapons player;
 removeAllWeapons player;
 removeAllItems player;
@@ -27,7 +26,7 @@ switch (_loadout) do {
 switch (_loadout) do {
 	default { player addHeadgear "VSM_OPS_multicam"};
 	case "rcn_ld";
-	case "rcn_mem": { player addHeadgear "VSM_Multicam_Boonie"};
+	case "rcn_dmr": { player addHeadgear "VSM_Multicam_Boonie"};
 	case "ar_c": {player addHeadgear "UK3CB_BAF_H_CrewHelmet_B"};
 	case "pil": {player addHeadgear "H_PilotHelmetHeli_B"};
 };
@@ -61,7 +60,7 @@ switch (_loadout) do {
 					player addPrimaryWeaponItem "rhsusf_acc_ELCAN";
 					player addPrimaryWeaponItem "hlc_muzzle_SF3P_556"};
 	case "sqd_eng": {player addWeapon "rhs_weap_M590_8RD"};
-	case "rcn_mem": {player addWeapon "rhs_weap_SCARH_FDE_LB";
+	case "rcn_dmr": {player addWeapon "rhs_weap_SCARH_FDE_LB";
 					 player addPrimaryWeaponItem "ACE_optic_Hamr_2D";
 					 player addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
 					 player addPrimaryWeaponItem "rhsusf_acc_wmx";
@@ -93,17 +92,14 @@ switch (_loadout) do {
 		for "_i" from 1 to 4 do { player addItemToVest "rhs_mag_20Rnd_SCAR_762x51_m61_ap"};
 		for "_i" from 1 to 4 do { player addItemToBackpack "rhs_mag_20Rnd_SCAR_762x51_m62_tracer"};
 	};
-
 	case "sqd_ar": {
 		for "_i" from 1 to 2 do { player addItemToVest "rhsusf_200Rnd_556x45_M855_mixed_soft_pouch"};
 		for "_i" from 1 to 2 do { player addItemToBackpack "rhsusf_200Rnd_556x45_M855_mixed_soft_pouch"};
 	};
-
 	case "sqd_eng": {
 		for "_i" from 1 to 6 do { player addItemToVest "rhsusf_8Rnd_Slug"};
 		for "_i" from 1 to 6 do { player addItemToVest "rhsusf_8Rnd_00Buck"};
 	};
-
 	case "ar_c";
 	case "pil": {
 		for "_i" from 1 to 4 do { player addItemToVest "hlc_30Rnd_9x19_B_MP5"};
@@ -113,7 +109,7 @@ switch (_loadout) do {
 // add secondary ammo
 //switch (_loadout) do {
 //	default {};
-};
+//};
 
 // add assistant ammo 
 switch (_loadout) do {
