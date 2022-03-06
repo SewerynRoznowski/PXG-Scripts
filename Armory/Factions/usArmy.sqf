@@ -303,6 +303,7 @@ for "_i" from 1 to 2 do { player addItemToBackpack "ACE_bloodIV_500"};
 switch (_loadout) do {
 	default {};
 	case "sqd_med": {
+		for "_i" from 1 to 1 do { player addItemToBackpack "ACE_surgicalKit"};
 		for "_i" from 1 to 15 do { player addItemToBackpack "ACE_fieldDressing"};
 		for "_i" from 1 to 15 do { player addItemToBackpack "ACE_elasticBandage"};
 		for "_i" from 1 to 15 do { player addItemToBackpack "ACE_quikclot"};
