@@ -4,6 +4,36 @@ _indexLoadout = lbCurSel 1501;
 _faction = lbData [1500, _indexFaction];
 _loadout = lbData [1501, _indexLoadout];
 
+// generate slot ID
+_slotStr = str player;
+_slotId = _slotStr splitString "_";
+_slotSide = _slotId #0;
+_slotGroup = _slotId #1;
+_slotRole = _slotId #2;
+_srCh = 1;
+_lrCh = 1;
+
+// Assign radio channel
+switch (_slotGroup) do {
+	default { };
+	case "plt": {_srCh = 3};
+	case "sqd1": { _srCh = 1};
+	case "sqd2": { _srCh = 2};
+	case "sqd3": { _srCh = 3};
+	case "sup1": { _srCh = 5};
+	case "sup2": { _srCh = 6};
+	case "sup3": { _srCh = 7};
+	case "sup4": { _srCh = 8};
+	case "sup5": { _srCh = 9};
+	case "rcn1": { _srCh = 10};
+	case "rcn2": { _srCh = 11};
+	case "tac": {_srCh = 12; _lrCh = 2};
+	case "ar1": {_srCh = 13};
+	case "ar2": {_srCh = 14};
+	case "ar3": {_srCh = 15};
+	case "ar4": {_srCh = 16};
+};
+
 hint format ["%1 %2", _faction, _loadout];
 
 // removes all items from current loadout
@@ -15,6 +45,22 @@ removeUniform player;
 removeVest player;
 removeBackpack player;
 removeHeadgear player;
+
+// Set traits 
+switch (_loadout) do {
+	default {
+		player setVariable ["ace_medical_medicclass",0];
+		player setVariable ["ACE_IsEngineer",0]
+		};
+	case "sqd_med": { 
+		player setVariable ["ace_medical_medicclass",1];
+		player setVariable ["ACE_IsEngineer",0]
+		};
+	case "logi": { 
+		player setVariable ["ACE_IsEngineer",2];
+		player setVariable ["ace_medical_medicclass",0]
+		};
+};
 
  // add uniform
 switch (_loadout) do {
@@ -75,9 +121,6 @@ switch (_loadout) do {
 	case "sqd_ar": {player addWeapon "hlc_rifle_RPK12";
 					player addPrimaryWeaponItem "optic_MRCO";
 	};
-	case "sqd_eng": {player addWeapon "hlc_rifle_saiga12k";
-					player addPrimaryWeaponItem "rhs_acc_ekp1";
-	};
 	case "sqd_dmr": {player addWeapon "rhs_weap_svdp";
 					 player addPrimaryWeaponItem "rhs_acc_pso1m21_svd"
 	};	
@@ -108,10 +151,6 @@ switch (_loadout) do {
 	case "sqd_ar": {
 		for "_i" from 1 to 6 do { player addItemToVest "hlc_60Rnd_545x39_t_rpk"};
 		for "_i" from 1 to 6 do { player addItemToBackpack "hlc_60Rnd_545x39_t_rpk"};
-	};
-	case "sqd_eng": {
-		for "_i" from 1 to 10 do { player addItemToVest "hlc_10rnd_12g_buck_S12"};
-		for "_i" from 1 to 10 do { player addItemToBackpack "hlc_10rnd_12g_slug_S12"};
 	};
 	case "sqd_dmr";
 	case "rcn_dmr": {
@@ -287,3 +326,16 @@ switch (_loadout) do {
 		for "_i" from 1 to 8 do { player addItemToBackpack "ACE_epinephrine"};
 	};
 };
+
+// configure radios
+waitUntil { ([] call acre_api_fnc_isInitialized) };
+
+/// Check for radio type
+_hasRadio343 = [player, "ACRE_PRC343"] call acre_api_fnc_hasKindOfRadio;
+_hasRadio152 = [player, "ACRE_PRC152"] call acre_api_fnc_hasKindOfRadio;
+_hasRadio117 = [player, "ACRE_PRC117F"] call acre_api_fnc_hasKindOfRadio;
+
+// set radio channel, default channel 1 is correct for most 152s and 117. Hence only swap channel in specific case.
+if (_hasradio343) then { [(["ACRE_PRC343"] call acre_api_fnc_getRadioByType), _srCh] call acre_api_fnc_setRadioChannel};
+if (_hasradio152 && _slotGroup == "plt") then { [(["ACRE_PRC152"] call acre_api_fnc_getRadioByType), _srCh] call acre_api_fnc_setRadioChannel};
+if (_hasradio117 && _slotRole == "fac1") then { [(["ACRE_PRC117F"] call acre_api_fnc_getRadioByType), _lrCh] call acre_api_fnc_setRadioChannel};
