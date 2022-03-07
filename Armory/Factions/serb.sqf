@@ -16,6 +16,22 @@ removeVest player;
 removeBackpack player;
 removeHeadgear player;
 
+// Set traits 
+switch (_loadout) do {
+	default {
+		player setVariable ["ace_medical_medicclass",0];
+		player setVariable ["ACE_IsEngineer",0]
+		};
+	case "sqd_med": { 
+		player setVariable ["ace_medical_medicclass",1];
+		player setVariable ["ACE_IsEngineer",0]
+		};
+	case "logi": { 
+		player setVariable ["ACE_IsEngineer",2];
+		player setVariable ["ace_medical_medicclass",0]
+		};
+};
+
  // add uniform
 switch (_loadout) do {
 	default { player forceAddUniform "rhssaf_uniform_m10_digital_summer"};
