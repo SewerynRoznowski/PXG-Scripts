@@ -68,7 +68,6 @@ switch (_loadout) do {
 	case "sqd_ar";
 	case "sqd_aar": { player addVest "rhsusf_iotv_ocp_SAW"};
 	case "sqd_gre": { player addVest "rhsusf_iotv_ocp_Grenadier"};
-	case "sqd_eng": { player addVest "rhsusf_iotv_ocp_Repair"};
 	case "pil": { player addVest "V_BandollierB_rgr"};
 };
 
@@ -104,8 +103,7 @@ switch (_loadout) do {
 	};
 	case "sqd_ar": {player addWeapon "rhs_weap_m249_pip";
 					player addPrimaryWeaponItem "optic_MRCO";
-					player addPrimaryWeaponItem "rhsusf_acc_SFMB556"};
-	case "sqd_eng": {player addWeapon "UK3CB_BAF_L128A1"
+					player addPrimaryWeaponItem "rhsusf_acc_SFMB556"
 	};
 	case "sqd_dmr": {player addWeapon "rhs_weap_m14ebrri";
 					 player addPrimaryWeaponItem "rhsusf_acc_ACOG_RMR";
@@ -146,10 +144,6 @@ switch (_loadout) do {
 	case "sqd_ar": {
 		for "_i" from 1 to 2 do { player addItemToVest "rhsusf_200Rnd_556x45_M855_mixed_soft_pouch"};
 		for "_i" from 1 to 2 do { player addItemToBackpack "rhsusf_200Rnd_556x45_M855_mixed_soft_pouch"};
-	};
-	case "sqd_eng": {
-		for "_i" from 1 to 6 do { player addItemToVest "UK3CB_BAF_12G_Slugs"};
-		for "_i" from 1 to 6 do { player addItemToBackpack "UK3CB_BAF_12G_Pellets"};
 	};
 	case "sqd_dmr";
 	case "rcn_dmr": {

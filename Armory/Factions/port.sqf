@@ -76,8 +76,7 @@ switch (_loadout) do {
 	};
 	case "sqd_ar": {player addWeapon "hlc_lmg_minimipara_long_railed";
 					player addPrimaryWeaponItem "rhsusf_acc_ELCAN";
-					player addPrimaryWeaponItem "hlc_muzzle_SF3P_556"};
-	case "sqd_eng": {player addWeapon "rhs_weap_M590_8RD"
+					player addPrimaryWeaponItem "hlc_muzzle_SF3P_556"
 	};
 	case "sqd_dmr": {player addWeapon "rhs_weap_SCARH_FDE_LB";
 					 player addPrimaryWeaponItem "hlc_muzzle_Gunfighter_comp";
@@ -126,10 +125,6 @@ switch (_loadout) do {
 	case "sqd_ar": {
 		for "_i" from 1 to 2 do { player addItemToVest "hlc_200rnd_556x45_B_SAW"};
 		for "_i" from 1 to 2 do { player addItemToBackpack "hlc_200rnd_556x45_T_SAW"};
-	};
-	case "sqd_eng": {
-		for "_i" from 1 to 6 do { player addItemToVest "rhsusf_8Rnd_Slug"};
-		for "_i" from 1 to 6 do { player addItemToBackpack "rhsusf_8Rnd_00Buck"};
 	};
 	case "sqd_dmr";
 	case "rcn_dmr": {

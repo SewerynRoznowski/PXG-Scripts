@@ -91,8 +91,7 @@ switch (_loadout) do {
 	};
 	case "sqd_ar": {player addWeapon "hlc_lmg_minimipara_railed";
 					player addPrimaryWeaponItem "optic_MRCO";
-					player addPrimaryWeaponItem "hlc_muzzle_Gunfighter_comp"};
-	case "sqd_eng": {player addWeapon "UK3CB_BAF_L128A1"
+					player addPrimaryWeaponItem "hlc_muzzle_Gunfighter_comp"
 	};
 	case "sqd_dmr": {player addWeapon "hlc_rifle_PSG1A1_RIS";
 					 player addPrimaryWeaponItem "optic_MRCO"
@@ -127,10 +126,6 @@ switch (_loadout) do {
 	case "sqd_ar": {
 		for "_i" from 1 to 2 do { player addItemToVest "hlc_200rnd_556x45_M_SAW"};
 		for "_i" from 1 to 2 do { player addItemToBackpack "hlc_200rnd_556x45_B_SAW"};
-	};
-	case "sqd_eng": {
-		for "_i" from 1 to 6 do { player addItemToVest "UK3CB_BAF_12G_Slugs"};
-		for "_i" from 1 to 6 do { player addItemToBackpack "UK3CB_BAF_12G_Pellets"};
 	};
 	case "sqd_dmr";
 	case "rcn_dmr": {

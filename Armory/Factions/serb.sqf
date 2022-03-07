@@ -90,8 +90,6 @@ switch (_loadout) do {
 	};
 	case "sqd_ar": {player addWeapon "rhs_weap_m84"
 	};
-	case "sqd_eng": {player addWeapon "UK3CB_BAF_L128A1"
-	};
 	case "sqd_dmr": {player addWeapon "rhs_weap_m76";
 					 player addPrimaryWeaponItem "rhs_acc_pso1m21";
 	};	
@@ -122,10 +120,6 @@ switch (_loadout) do {
 	};
 	case "sqd_ar": {
 		for "_i" from 1 to 4 do { player addItemToBackpack "rhs_100Rnd_762x54mmR_green"};
-	};
-	case "sqd_eng": {
-		for "_i" from 1 to 6 do { player addItemToBackpack "UK3CB_BAF_12G_Slugs"};
-		for "_i" from 1 to 6 do { player addItemToBackpack "UK3CB_BAF_12G_Pellets"};
 	};
 	case "sqd_dmr";
 	case "rcn_dmr": {

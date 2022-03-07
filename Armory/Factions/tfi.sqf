@@ -91,9 +91,6 @@ switch (_loadout) do {
 	case "sqd_ar": {player addWeapon "hlc_rifle_RPK12";
 					player addPrimaryWeaponItem "optic_MRCO";
 	};
-	case "sqd_eng": {player addWeapon "hlc_rifle_saiga12k";
-					player addPrimaryWeaponItem "rhs_acc_ekp1";
-	};
 	case "sqd_dmr": {player addWeapon "rhs_weap_svdp";
 					 player addPrimaryWeaponItem "rhs_acc_pso1m21_svd"
 	};	
@@ -124,10 +121,6 @@ switch (_loadout) do {
 	case "sqd_ar": {
 		for "_i" from 1 to 6 do { player addItemToVest "hlc_60Rnd_545x39_t_rpk"};
 		for "_i" from 1 to 6 do { player addItemToBackpack "hlc_60Rnd_545x39_t_rpk"};
-	};
-	case "sqd_eng": {
-		for "_i" from 1 to 10 do { player addItemToVest "hlc_10rnd_12g_buck_S12"};
-		for "_i" from 1 to 10 do { player addItemToBackpack "hlc_10rnd_12g_slug_S12"};
 	};
 	case "sqd_dmr";
 	case "rcn_dmr": {
