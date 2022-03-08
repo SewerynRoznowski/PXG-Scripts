@@ -121,7 +121,7 @@ switch (_loadout) do {
 	case "sqd_ar": {player addWeapon "rhs_weap_m84"
 	};
 	case "sqd_dmr": {player addWeapon "rhs_weap_m76";
-					 player addPrimaryWeaponItem "rhs_acc_pso1m21";
+					 player addPrimaryWeaponItem "rhs_acc_ekp8_02";
 	};	
 	case "rcn_dmr": {player addWeapon "rhs_weap_m76";
 					 player addPrimaryWeaponItem "rhs_acc_pso1m21";

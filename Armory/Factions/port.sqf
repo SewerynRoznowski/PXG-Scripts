@@ -102,10 +102,10 @@ switch (_loadout) do {
 	default { player addWeapon "rhs_weap_SCARH_FDE_STD";
 			  player addPrimaryWeaponItem "hlc_muzzle_Gunfighter_comp";
 			  player addPrimaryWeaponItem "rhsusf_acc_wmx";
-			  player addPrimaryWeaponItem "optic_MRCO"
+			  player addPrimaryWeaponItem "ACE_optic_Hamr_2D"
 	};
 	case "sqd_ar": {player addWeapon "hlc_lmg_minimipara_long_railed";
-					player addPrimaryWeaponItem "rhsusf_acc_ELCAN";
+					player addPrimaryWeaponItem "ACE_optic_Hamr_2D";
 					player addPrimaryWeaponItem "hlc_muzzle_SF3P_556"
 	};
 	case "sqd_dmr": {player addWeapon "rhs_weap_SCARH_FDE_LB";
@@ -117,7 +117,7 @@ switch (_loadout) do {
 	case "rcn_dmr": {player addWeapon "rhs_weap_SCARH_FDE_LB";
 					 player addPrimaryWeaponItem "hlc_muzzle_Gunfighter_comp";
 					 player addPrimaryWeaponItem "rhsusf_acc_wmx";
-					 player addPrimaryWeaponItem "ACE_optic_Hamr_2D";
+					 player addPrimaryWeaponItem "rhsusf_acc_ACOG_RMR";
 					 player addPrimaryWeaponItem "rhsusf_acc_harris_bipod"
 	};
 	case "sup_mmg_g": {	player addWeapon "hlc_lmg_mk48mod1";
@@ -125,7 +125,7 @@ switch (_loadout) do {
 						player addPrimaryWeaponItem "rhsusf_acc_ARDEC_M240"
 	};
 	case "ar_c";
-	case "pil": {player addWeapon "hlc_smg_mp5a3"};
+	case "pil": {player addWeapon "rhs_weap_SCARH_FDE_STD"};
 };
 
 // add secondary weapon
@@ -173,7 +173,7 @@ switch (_loadout) do {
 	};
 	case "ar_c";
 	case "pil": {
-		for "_i" from 1 to 4 do { player addItemToVest "hlc_30Rnd_9x19_B_MP5"};
+		for "_i" from 1 to 4 do { player addItemToVest "rhs_mag_20Rnd_SCAR_762x51_m61_ap"};
 	};
 };
 

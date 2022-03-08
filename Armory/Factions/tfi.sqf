@@ -119,7 +119,7 @@ switch (_loadout) do {
 					player addPrimaryWeaponItem "optic_Hamr"
 	};
 	case "sqd_ar": {player addWeapon "hlc_rifle_RPK12";
-					player addPrimaryWeaponItem "optic_MRCO";
+					player addPrimaryWeaponItem "optic_Hamr";
 	};
 	case "sqd_dmr": {player addWeapon "rhs_weap_svdp";
 					 player addPrimaryWeaponItem "rhs_acc_pso1m21_svd"

@@ -119,7 +119,7 @@ switch (_loadout) do {
 // add primary weapon
 switch (_loadout) do {
 	default { player addWeapon "rhs_weap_m4a1_carryhandle_grip2";
-			  player addPrimaryWeaponItem "rhsusf_acc_ACOG_RMR";
+			  player addPrimaryWeaponItem "optic_Hamr";
 			  player addPrimaryWeaponItem "rhsusf_acc_SFMB556";
 			  player addPrimaryWeaponItem "rhsusf_acc_anpeq15_bk"
 	};
@@ -127,22 +127,22 @@ switch (_loadout) do {
 	case "sqd_ld";
 	case "rcn_ld";
 	case "sqd_gre":{ player addWeapon "rhs_weap_m4a1_carryhandle_m203";
-					player addPrimaryWeaponItem "rhsusf_acc_ACOG_RMR";
+					player addPrimaryWeaponItem "optic_Hamr";
 					player addPrimaryWeaponItem "rhsusf_acc_anpeq15side_bk";
 					player addPrimaryWeaponItem "rhsusf_acc_SFMB556"
 	};
 	case "sqd_ar": {player addWeapon "rhs_weap_m249_pip";
-					player addPrimaryWeaponItem "optic_MRCO";
+					player addPrimaryWeaponItem "optic_Hamr";
 					player addPrimaryWeaponItem "rhsusf_acc_SFMB556"
 	};
 	case "sqd_dmr": {player addWeapon "rhs_weap_m14ebrri";
-					 player addPrimaryWeaponItem "rhsusf_acc_ACOG_RMR";
+					 player addPrimaryWeaponItem "optic_Hamr";
 					 player addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
 					 player addPrimaryWeaponItem "rhsusf_acc_anpeq15side_bk";
 					 player addPrimaryWeaponItem "rhsusf_acc_m14_flashsuppresor"
 	};	
 	case "rcn_dmr": {player addWeapon "rhs_weap_m14ebrri";
-					 player addPrimaryWeaponItem "rhsusf_acc_ACOG_MDO";
+					 player addPrimaryWeaponItem "rhsusf_acc_ACOG_RMR";
 					 player addPrimaryWeaponItem "rhsusf_acc_harris_bipod";
 					 player addPrimaryWeaponItem "rhsusf_acc_anpeq15side_bk";
 					 player addPrimaryWeaponItem "rhsusf_acc_m14_flashsuppresor"
@@ -152,7 +152,7 @@ switch (_loadout) do {
 						player addPrimaryWeaponItem "rhsusf_acc_ARDEC_M240"
 	};
 	case "ar_c";
-	case "pil": {player addWeapon "UK3CB_BAF_L91A1"};
+	case "pil": {player addWeapon "rhs_weap_m4a1_carryhandle_grip2"};
 };
 
 // add secondary weapon
@@ -192,7 +192,7 @@ switch (_loadout) do {
 	};
 	case "ar_c";
 	case "pil": {
-		for "_i" from 1 to 4 do { player addItemToVest "UK3CB_BAF_9_30Rnd"};
+		for "_i" from 1 to 4 do { player addItemToVest "rhs_mag_30Rnd_556x45_M855_Stanag"};
 	};
 };
 

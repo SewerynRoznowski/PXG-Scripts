@@ -117,7 +117,7 @@ switch (_loadout) do {
 						player addPrimaryWeaponItem "ACE_optic_MRCO_2D"
 	};
 	case "ar_c";
-	case "pil": {player addWeapon "hlc_smg_mp5a3"};
+	case "pil": {player addWeapon "hlc_rifle_g3a3"};
 };
 
 // add secondary weapon
@@ -164,7 +164,7 @@ switch (_loadout) do {
 	};
 	case "ar_c";
 	case "pil": {
-		for "_i" from 1 to 4 do { player addItemToVest "hlc_30Rnd_9x19_B_MP5"};
+		for "_i" from 1 to 4 do { player addItemToVest "hlc_20rnd_762x51_b_G3"};
 	};
 };
 
