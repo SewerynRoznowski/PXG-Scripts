@@ -85,7 +85,7 @@ switch (_loadout) do {
 	case "rcn_drone";
 	case "rcn_dmr": { player addHeadgear "rhsusf_ach_helmet_camo_ocp"};
 	case "ar_c": {player addHeadgear "rhsusf_cvc_ess"};
-	case "pil": {player addHeadgear "rhsusf_ihadss"};
+	case "pil": {player addHeadgear "rhsusf_hgu56p_visor_green"};
 };
 
 // add vest
