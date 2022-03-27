@@ -1,12 +1,12 @@
-params["_loadout"];
+params["_side","_faction","_variant", "_loadout"]; 
 
 // Sets default value for short and long range radio
 _srCh = 1;
 _lrCh = 1;
 
 // Gets slot I
-_slotGroup = player getVariable "PXG_player_group"; 
-_slotRole = player getVariable "PXG_player_role";
+_slotGroup = player getVariable "PXG_Slot_Group"; 
+_slotRole = player getVariable "PXG_Slot_Role";
 
 // Assigns correct channel based on ID 
 switch (_slotGroup) do {

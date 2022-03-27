@@ -6,7 +6,7 @@ _variant = lbText [1502, _indexVariant];
 _variantArray = _variant splitString " ";
 _variantEra = _variantArray #1;
 
-_loadoutsScriptPath = "Scripts\Armory\Factions\";
+_loadoutsScriptPath = "Scripts\Factions\";
 _loadoutsScriptPath = _loadoutsScriptPath + _faction + "\" + _variantEra +"\loadoutlist.sqf";
 
 _loadoutsArray = call compile preprocessfile _loadoutsScriptPath;

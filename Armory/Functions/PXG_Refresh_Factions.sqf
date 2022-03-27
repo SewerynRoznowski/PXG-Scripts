@@ -1,6 +1,6 @@
 _selectedSide = str lbCurSel 1500;
 
-_factionsScriptPath = "Scripts\Armory\Factions\PXG_Available_Factions_";
+_factionsScriptPath = "Scripts\Factions\PXG_Available_Factions_";
 _side = "Blue.sqf";
 
 switch (_selectedSide) do {

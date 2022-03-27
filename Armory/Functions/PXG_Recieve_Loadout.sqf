@@ -14,16 +14,16 @@ removeVest player;
 removeBackpack player;
 removeHeadgear player;
 
-_uniformPath = "Scripts\Armory\Factions\";
+_uniformPath = "Scripts\Factions\";
 _uniformPath = _uniformPath + _faction + "\" + _variantEra + "\uniforms_" + _variantCamo + ".sqf";
 
-_weaponsPath = "Scripts\Armory\Factions\";
+_weaponsPath = "Scripts\Factions\";
 _weaponsPath = _weaponsPath + _faction + "\" + _variantEra + "\weapons.sqf";
 
-_ammoPath = "Scripts\Armory\Factions\";
+_ammoPath = "Scripts\Factions\";
 _ammoPath = _ammoPath + _faction + "\" + _variantEra + "\ammo.sqf";
 
-_gearPath = "Scripts\Armory\Factions\";
+_gearPath = "Scripts\Factions\";
 _gearPath = _gearPath + _faction + "\" + _variantEra + "\gear.sqf";
 
 // Set ACE permissions 
@@ -39,16 +39,16 @@ _gearPath = _gearPath + _faction + "\" + _variantEra + "\gear.sqf";
 [_side, _faction, _variant, _loadout] call compile preprocessFile _ammoPath;
 
 // Give radios
-[_side, _faction, _variant, _loadout] call compile preprocessFile "Scripts\Armory\Factions\common\radios.sqf";
+[_side, _faction, _variant, _loadout] call compile preprocessFile "Scripts\Factions\common\radios.sqf";
 
 // Give common gear
-[_side, _faction, _variant, _loadout] call compile preprocessFile "Scripts\Armory\Factions\common\gear.sqf";
+[_side, _faction, _variant, _loadout] call compile preprocessFile "Scripts\Factions\common\gear.sqf";
 
 // Give Specific gear 
 [_side, _faction, _variant, _loadout] call compile preprocessFile _gearPath;
 
 // Give medical  
-[_side, _faction, _variant, _loadout] call compile preprocessFile "Scripts\Armory\Factions\common\medical.sqf";
+[_side, _faction, _variant, _loadout] call compile preprocessFile "Scripts\Factions\common\medical.sqf";
 
 // configure radios
 [_side, _faction, _variant, _loadout] call compile preprocessFile "scripts\Armory\Functions\PXG_Configure_RadioChannels.sqf";
