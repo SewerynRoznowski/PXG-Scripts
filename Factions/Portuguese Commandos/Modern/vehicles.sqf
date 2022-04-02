@@ -13,7 +13,7 @@ _availableVehicles =
 	"UK3CB_BAF_LandRover_WMIK_Milan_FFR_Sand_A_MTP",
 	
 	//IFV
-	"I_APC_Wheeled_03_cannon_F",
+	"I_APC_Wheeled_03_cannon_F", //Doesn't spawn in correct camo
 	
 	//Rotary Transport
 	"RHS_MELB_MH6M",
