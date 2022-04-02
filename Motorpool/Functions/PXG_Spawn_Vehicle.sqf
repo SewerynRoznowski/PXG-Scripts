@@ -13,7 +13,8 @@ _vehiclesScriptPath = "Scripts\Factions\";
 _vehiclesScriptPath = _vehiclesScriptPath + _faction + "\" + _variantEra +"\vehicles.sqf";
 
 _vehiclesArray = call compile preprocessfile _vehiclesScriptPath;
-_vehicleType = _vehiclesArray select _indexVehicle;
+//_vehicleType = _vehiclesArray select _indexVehicle;
+_vehicleType = lbData [461501, lbCurSel 461501];
 
 //Check for vehicles in radius of spawnpoint
 private _nearVehicles = nearestObjects [getPos _spawnPosition, ["LandVehicle", "Air", "Ship", "Slingload_base_F"], 5];
