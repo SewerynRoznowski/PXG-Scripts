@@ -17,11 +17,11 @@ _availableVehicles =
 	
 	//Rotary Transport
 	"RHS_MELB_MH6M",
-	"UK3CB_BAF_Merlin_HC3_18_DDPM_RM",
+	"UK3CB_BAF_Merlin_HC4_18_DDPM_RM",
 	
 	//Rotary Armed
 	"RHS_MELB_AH6M",
-	"UK3CB_BAF_Merlin_HC3_18_GPMG_DDPM_RM",
+	"UK3CB_BAF_Merlin_HC4_18_GPMG_DDPM_RM",
 	
 	//Fixed Wing Transport
 	"RHS_C130J",
