@@ -26,7 +26,7 @@ class dialog_motorpool
 			y = 0.225 * safezoneH + safezoneY;
 			w = 0.4125 * safezoneW;
 			h = 0.022 * safezoneH;
-			colorBackground[] = {0.13,0.54,0.21,1};
+			colorBackground[] = {0.13,0.54,0.21,0.8};
 			sizeEx = 1 * GUI_GRID_H * GUI_GRID_H;
 		};
 		
