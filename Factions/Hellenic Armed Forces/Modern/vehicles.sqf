@@ -14,7 +14,6 @@ _availableVehicles =
 	
 	//APC
 	"UK3CB_MDF_B_M113_Unarmed",
-	"UK3CB_MDF_B_M113_Medical", 
 	"UK3CB_MDF_B_M113_M2", 
 	
 	//IFV
