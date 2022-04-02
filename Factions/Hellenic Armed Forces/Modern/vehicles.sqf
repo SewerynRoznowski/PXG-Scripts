@@ -14,15 +14,15 @@ _availableVehicles =
 	
 	//APC
 	"UK3CB_MDF_B_M113_Unarmed",
-	"UK3CB_MDF_B_M113_Medical",
-	"UK3CB_MDF_B_M113_M2",
+	"UK3CB_MDF_B_M113_Medical", 
+	"UK3CB_MDF_B_M113_M2", 
 	
 	//IFV
-	"I_LT_01_AT_F",
-	"I_LT_01_cannon_F",
-	"I_LT_01_AA_F",
+	"I_LT_01_AT_F",  //Doesn't spawn in correct camo
+	"I_LT_01_cannon_F", //Doesn't spawn in correct camo
+	"I_LT_01_AA_F", //Doesn't spawn in correct camo
 	
-	//Fixed Wing
+	//Fixed Wing Armed
 	"UK3CB_CW_US_B_LATE_A10",
 	
 	//Misc.
