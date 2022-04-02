@@ -10,10 +10,8 @@ _variantArray = _variant splitString " ";
 _variantEra = _variantArray #1;
 
 _vehiclesScriptPath = "Scripts\Factions\";
-_vehiclesScriptPath = _vehiclesScriptPath + _faction + "\" + _variantEra +"\vehicles.sqf";
+_vehiclesScriptPath = _vehiclesScriptPath + _faction + "\" + _variantEra +"\vehicles_recolour.sqf";
 
-_vehiclesArray = call compile preprocessfile _vehiclesScriptPath;
-//_vehicleType = _vehiclesArray select _indexVehicle;
 _vehicleType = lbData [461501, lbCurSel 461501];
 
 //Check for vehicles in radius of spawnpoint
@@ -33,6 +31,8 @@ if (count _nearVehicles > 0) then {
 } else {
 	private _vehicle = createVehicle[_vehicleType, getPosATL _spawnPosition, [], 0, "CAN_COLLIDE"];
 	_vehicle setDir getDir _spawnPosition;
+	
+	[_vehicle,_vehicleType] call compile preprocessfile _vehiclesScriptPath;
 	
 	//Remove default contents from vehicle
 	clearItemCargoGlobal _vehicle;
