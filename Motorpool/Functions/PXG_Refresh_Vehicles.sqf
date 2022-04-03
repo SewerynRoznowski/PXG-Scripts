@@ -21,3 +21,7 @@ lbClear 461501;
 	_vehicleName = getText (configFile >> "CfgVehicles" >> _x >> "DisplayName");
 	lbAdd [461501, _vehicleName];
 }	forEach _vehiclesArray;
+
+{
+	lbSetData [461501, _forEachIndex, _x];
+} forEach _vehiclesArray;
