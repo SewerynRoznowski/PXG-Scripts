@@ -1,4 +1,0 @@
-_availableVehicles = 
-[
-];
-_availableVehicles
