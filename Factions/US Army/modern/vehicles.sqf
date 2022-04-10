@@ -1,4 +1,4 @@
--_availableVehicles = 
+_availableVehicles = 
 [
   //Utility
   "rhsusf_M1083A1P2_B_D_fmtv_usarmy",
