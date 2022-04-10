@@ -1,7 +1,7 @@
 createDialog "dialog_supply_spawn"; 
 //Opens the supply spawn dialog and fills lists.
 
-sidesArray = ["Blufor", "Redfor", "Indep"];
+sidesArray = ["Blufor", "Opfor", "Indep"];
 
 {
 	lbAdd [451504, _x];

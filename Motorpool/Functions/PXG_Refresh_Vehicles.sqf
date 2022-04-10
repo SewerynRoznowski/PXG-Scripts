@@ -12,8 +12,6 @@ _variantEra = _variantArray #1;
 _vehiclesScriptPath = "Scripts\Factions\";
 _vehiclesScriptPath = _vehiclesScriptPath + _faction + "\" + _variantEra +"\vehicles.sqf";
 
-hint _vehiclesScriptPath;
-
 _vehiclesArray = call compile preprocessfile _vehiclesScriptPath;
 
 lbClear 461501;

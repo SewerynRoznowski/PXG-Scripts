@@ -1,3 +1,3 @@
-_avialableVariants = ["Woodland Modern"];
+_avialableVariants = ["Multicam Modern"];
 
 _avialableVariants

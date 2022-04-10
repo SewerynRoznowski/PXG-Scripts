@@ -27,7 +27,7 @@ _resupplyAvailable = [
 	],
 	["HAT Resupply",
 		[
-			["Titan_AT",4],
+			["Titan_AT",4]
 		]
 	],
 	["Hand Grenades",

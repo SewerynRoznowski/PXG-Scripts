@@ -1,7 +1,7 @@
 createDialog "dialog_motorpool"; 
 //Opens the vehicle spawn dialog and fills lists.
 
-sidesArray = ["Blufor", "Redfor", "Indep"];
+sidesArray = ["Blufor", "Opfor", "Indep"];
 
 {
 	lbAdd [461504, _x];

@@ -5,7 +5,7 @@ _side = "Blue.sqf";
 
 switch (_selectedSide) do {
 	case "0": {_side = "Blue.sqf"};
-	case "1": {_side = "Red.sqf"};
+	case "1": {_side = "Opfor.sqf"};
 	case "2": {_side = "Indep.sqf"};
 	default { };
 };
