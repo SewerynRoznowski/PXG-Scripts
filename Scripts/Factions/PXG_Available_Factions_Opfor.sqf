@@ -1,0 +1,3 @@
+_availableFactions = [];
+
+_availableFactions
