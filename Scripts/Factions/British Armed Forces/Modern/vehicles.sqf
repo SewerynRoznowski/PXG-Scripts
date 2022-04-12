@@ -1,7 +1,7 @@
 _availableVehicles = 
 [
 	//Utility
-	"UK3CB_BAF_MAN_HX58_Repair_Sand_DDPM_RM",
+	"UK3CB_BAF_MAN_HX58_Transport_Sand_DDPM_RM",
 	"UK3CB_BAF_MAN_HX58_Cargo_Sand_B_DDPM_RM",
 	"UK3CB_BAF_MAN_HX58_Fuel_Sand_DDPM_RM",
 	"UK3CB_BAF_MAN_HX58_Repair_Sand_DDPM",
