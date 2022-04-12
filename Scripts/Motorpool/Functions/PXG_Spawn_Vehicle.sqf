@@ -32,15 +32,22 @@ if (count _nearVehicles > 0) then {
 	private _vehicle = createVehicle[_vehicleType, getPosATL _spawnPosition, [], 0, "CAN_COLLIDE"];
 	_vehicle setDir getDir _spawnPosition;
 	
+	_vehicleSplitType = _vehicleType splitString "_";
+	
 	[_vehicle,_vehicleType] call compile preprocessfile _vehiclesScriptPath;
 	
 	//Remove default contents from vehicle
 	clearItemCargoGlobal _vehicle;
-	clearMagazineCargoGlobal _vehicle;
 	clearWeaponCargoGlobal _vehicle;
 	clearBackpackCargoGlobal _vehicle;
+	if (_vehicleSplitType #0 != "UK3CB") then
+	{
+		clearMagazineCargoGlobal _vehicle;
+	};
 	
-	if (unitIsUAV _vehicle) then {
+	
+	if (unitIsUAV _vehicle) then 
+	{
 		createVehicleCrew _vehicle;
 	}
 }
