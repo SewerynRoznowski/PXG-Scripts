@@ -1,3 +1,3 @@
-_avialableVariants = ["OCP Modern"];
+_avialableVariants = ["Olive Early","OCP Modern"];
 
 _avialableVariants
