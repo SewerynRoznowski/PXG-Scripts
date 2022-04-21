@@ -14,8 +14,9 @@ _factionsScriptPath = _factionsScriptPath + _side;
 
 _factionsArray = call compile preprocessfile _factionsScriptPath;
 
+lbClear 451501;
 lbClear 451502;
-
+lbClear 451503;
 {
 	lbAdd [451502, _x];
 }	forEach _factionsArray;

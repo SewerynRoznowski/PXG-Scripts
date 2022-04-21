@@ -6,6 +6,7 @@ _variantScriptPath = _variantScriptPath + _faction + "\variantlist.sqf";
 
 _variants = call compile preprocessfile _variantScriptPath;
 
+lbClear 451501;
 lbClear 451503;
 {
 	lbAdd [451503, _x];
