@@ -5,16 +5,16 @@ switch (_loadout) do {
 	default { player addWeapon "rhs_weap_SCARH_FDE_STD";
 			  player addPrimaryWeaponItem "hlc_muzzle_Gunfighter_comp";
 			  player addPrimaryWeaponItem "rhsusf_acc_wmx";
-			  player addPrimaryWeaponItem "ACE_optic_Hamr_2D"
+			  player addPrimaryWeaponItem "optic_MRCO"
 	};
 	case "sqd_ar": {player addWeapon "hlc_lmg_minimipara_long_railed";
-					player addPrimaryWeaponItem "ACE_optic_Hamr_2D";
+					player addPrimaryWeaponItem "optic_MRCO";
 					player addPrimaryWeaponItem "hlc_muzzle_SF3P_556"
 	};
 	case "sqd_dmr": {player addWeapon "rhs_weap_SCARH_FDE_LB";
 					 player addPrimaryWeaponItem "hlc_muzzle_Gunfighter_comp";
 					 player addPrimaryWeaponItem "rhsusf_acc_wmx";
-					 player addPrimaryWeaponItem "ACE_optic_Hamr_2D";
+					 player addPrimaryWeaponItem "optic_MRCO";
 					 player addPrimaryWeaponItem "rhsusf_acc_harris_bipod"
 	};	
 	case "rcn_dmr": {player addWeapon "rhs_weap_SCARH_FDE_LB";
