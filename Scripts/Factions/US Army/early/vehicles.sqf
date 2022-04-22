@@ -1,61 +1,39 @@
 _availableVehicles = 
 [
   //Utility
-  "rhsusf_M1083A1P2_B_D_fmtv_usarmy",
-  "rhsusf_M1083A1P2_B_D_flatbed_fmtv_usarmy",
-  "rhsusf_M978A4_BKIT_usarmy_d",
-  "rhsusf_M977A4_AMMO_BKIT_usarmy_d",
-  "rhsusf_m998_d_2dr_fulltop",
-  "rhsusf_m1025_d",
-  "rhsusf_m113d_usarmy_supply",
-  
+  "UK3CB_CW_US_B_EARLY_M939_Reammo",
+  "UK3CB_CW_US_B_EARLY_M939",
+  "UK3CB_CW_US_B_EARLY_M939_Open",
+  "UK3CB_CW_US_B_EARLY_M151_Jeep_Closed",
+  "UK3CB_CW_US_B_EARLY_M151_Jeep_Open",
+
   //Armed Car/MRAP
-  "rhsusf_M1220_M153_M2_usarmy_d",
-  "rhsusf_M1220_usarmy_d",
-  "rhsusf_M1237_M2_usarmy_d",
-  "rhsusf_M1232_usarmy_d",
-  "rhsusf_m966_d",
-  "rhsusf_m1025_d_m2",
-  
+  "UK3CB_CW_US_B_EARLY_M939_Guntruck",
+  "UK3CB_CW_US_B_EARLY_M151_Jeep_TOW",
+  "UK3CB_CW_US_B_EARLY_M151_Jeep_HMG",
+
   //APC
-  "rhsusf_stryker_m1132_m2_np_d",
-  "rhsusf_m113d_usarmy",
-  "rhsusf_m113d_usarmy_unarmed",
-  "rhsusf_stryker_m1134_d",
-  
+  "UK3CB_CW_US_B_EARLY_AAV",
   //IFV
-  "RHS_M2A3_BUSKIII",
-  "RHS_M6",
-  
+ 
   //MBT
-  "rhsusf_m1a2sep1tuskiid_usarmy",
-  
+
   //SPG
-  "RHS_M119_D",
-  "rhsusf_m109d_usarmy",
-  "rhsusf_M142_usarmy_D",
-  
+
   //Rotary Transport
-  "RHS_MELB_MH6M",
-  "RHS_UH60M",
-  "RHS_CH_47F",
-  "RHS_CH_47F_cargo",
-  
+  "UK3CB_CW_US_B_EARLY_UH1H",
+  "UK3CB_CW_US_B_EARLY_UH1H_M240",
+  "UK3CB_CW_US_B_EARLY_UH1H_GUNSHIP",
+
   //Rotary Attack
-  "RHS_MELB_AH6M",
-  "RHS_UH60M_ESSS2",
-  "RHS_UH60M_ESSS",
-  "RHS_AH64D_wd",
-  
+  "UK3CB_CW_US_B_EARLY_AH1Z_GS",
+
   //Fixed Wing Transport
-  "RHS_C130J",
-  "RHS_C130J_Cargo",
-  
+  "UK3CB_CW_US_B_EARLY_C130J"
+   
   //Fixed Wing Attack
-  "RHS_A10",
   
   //Misc.
-  "rhsusf_stryker_m1132_m2_d"
   
 ];
 _availableVehicles

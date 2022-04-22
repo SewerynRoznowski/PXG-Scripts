@@ -42,6 +42,8 @@ if (_variantEra == "Late") then {
 		case "sqd_ld";
 		case "rcn_ld";
 		case "sup_mmg_l";
+		case "sup_hmg_l";
+		case "sup_gmg_l";
 		case "sup_mat_l";
 		case "sup_hat_l";
 		case "sup_mor_l": {player addItemToUniform "ACE_DAGR"};

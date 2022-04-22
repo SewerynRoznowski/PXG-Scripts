@@ -1,11 +1,16 @@
 _resupplyAvailable = [
 	["Rifle Resupply",
 		[
-			["UK3CB_M16_20rnd_556x45",60],
-			["UK3CB_M16_20rnd_556x45_RT",60]
+			["rhs_mag_30Rnd_556x45_M855_Stanag",40],
+			["rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",40]
 		]
 	],
 	["AR Resupply",
+		[
+			["rhsusf_200Rnd_556x45_M855_mixed_soft_pouch",30]
+		]
+	],
+	["MMG Resupply",
 		[
 			["rhsusf_100Rnd_762x51_m61_ap",10],
 			["rhsusf_100Rnd_762x51_m62_tracer",10],
@@ -14,13 +19,25 @@ _resupplyAvailable = [
 	],
 	["DMR Resupply",
 		[
-			["UK3CB_M14_20rnd_762x51",15],
-			["UK3CB_M14_20rnd_762x51_RT",15]
+			["rhsusf_20Rnd_762x51_m62_Mag",15],
+			["rhsusf_20Rnd_762x51_m993_Mag",15]
 		]
 	],
 	["LAT Resupply",
 		[
-			["rhs_weap_m72a7",8]
+			["rhs_weap_M136",8]
+		]
+	],
+	["MAT (HEDP)",
+		[
+			["rhs_mag_smaw_SR",2],
+			["rhs_mag_smaw_HEDP",8]
+		]
+	],
+	["MAT (HEAA)",
+		[
+			["rhs_mag_smaw_SR",2],
+			["rhs_mag_smaw_HEAA",8]
 		]
 	],
 	["Hand Grenades",
@@ -94,12 +111,10 @@ _resupplyAvailable = [
 	],
 	["Squad Resupply",
 		[
-			["UK3CB_M16_20rnd_556x45",20],
-			["UK3CB_M16_20rnd_556x45_RT",20],
-			["rhsusf_100Rnd_762x51_m61_ap",5],
-			["rhsusf_100Rnd_762x51_m80a1epr",5],
-			["rhsusf_100Rnd_762x51_m62_tracer",5],
-			["rhs_weap_m72a7",4],
+			["rhs_mag_30Rnd_556x45_M855_Stanag",20],
+			["rhs_mag_30Rnd_556x45_M855_Stanag_Tracer_Red",20],
+			["rhsusf_200Rnd_556x45_M855_mixed_soft_pouch",15],
+			["rhs_weap_M136",4],
 			["HandGrenade",15],
 			["rhs_mag_an_m8hc",10],
 			["1Rnd_HE_Grenade_Shell",15],
