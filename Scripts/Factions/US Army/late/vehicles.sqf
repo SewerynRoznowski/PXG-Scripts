@@ -37,7 +37,7 @@ _availableVehicles =
   
   //Fixed Wing Transport
   "RHS_C130J",
-  "RHS_C130J_Cargo",
+  "RHS_C130J_Cargo"
   
   //Fixed Wing Attack
 
