@@ -8,7 +8,7 @@ class dialog_motorpool
 		////////////////////////////////////////////////////////
 		
 		
-		class RscFrame_1: IGUIBack
+		class RscFrame_1: RscFrame
 		{
 			idc = -1;
 

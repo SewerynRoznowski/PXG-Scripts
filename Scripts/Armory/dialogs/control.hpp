@@ -3,11 +3,7 @@ class armoryDialog
 	idd = 1234;
 	class controls
 	{
-		////////////////////////////////////////////////////////
-		// GUI EDITOR OUTPUT START (by Spylon, v1.063, #Gixiza)
-		////////////////////////////////////////////////////////
-
-		class baseFrame: IGUIBack
+		class baseFrame: RscFrame
 		{
 			idc = 1800;
 
@@ -15,18 +11,22 @@ class armoryDialog
 			y = 0.236 * safezoneH + safezoneY;
 			w = 0.299302 * safezoneW;
 			h = 0.528 * safezoneH;
-			colorBackground[] = {-1,-1,-1,0.5};
+			colorBackground[] = {0.1, 0.1, 0.1, 0.7}; 
+			style = 128;
 		};
-		class factionList: RscListBox
+		class factionList: RscTree
 		{
 			idc = 1501;
 
 			x = 0.358023 * safezoneW + safezoneX;
 			y = 0.445 * safezoneH + safezoneY;
-			w = 0.0690698 * safezoneW;
+			w = 0.13 * safezoneW;
 			h = 0.22 * safezoneH;
 
-			onLBSelChanged = "call compile preprocessfile 'Scripts\Armory\Functions\PXG_Refresh_Variants.sqf'";
+			colorBackground[] = {0,0,0,0.3};
+
+			onTreeSelChanged = "call compile preprocessfile 'Scripts\Armory\Functions\PXG_Refresh_Loadouts.sqf'";
+
 		};
 		class buttonGetLoadout: RscButton
 		{
@@ -39,14 +39,16 @@ class armoryDialog
 			w = 0.0690698 * safezoneW;
 			h = 0.066 * safezoneH;
 		};
-		class loadoutList: RscListBox
+		class loadoutList: RscTree
 		{
 			idc = 1503;
 
-			x = 0.530698 * safezoneW + safezoneX;
+			x = 0.51 * safezoneW + safezoneX;
 			y = 0.313 * safezoneH + safezoneY;
-			w = 0.107442 * safezoneW;
+			w = 0.13 * safezoneW;
 			h = 0.352 * safezoneH;
+
+			colorBackground[] = {0,0,0,0.3};
 		};
 		class factionsText: RscText
 		{
@@ -63,20 +65,21 @@ class armoryDialog
 			idc = 1001;
 
 			text = "Loadouts"; //--- ToDo: Localize;
-			x = 0.530698 * safezoneW + safezoneX;
+			x = 0.51 * safezoneW + safezoneX;
 			y = 0.258 * safezoneH + safezoneY;
 			w = 0.0498837 * safezoneW;
 			h = 0.044 * safezoneH;
+
 		};
-		class sideList: RscListbox
+		class sideList: RscListBox
 		{
 			idc = 1500;
 			x = 0.358023 * safezoneW + safezoneX;
 			y = 0.313 * safezoneH + safezoneY;
-			w = 0.0690698 * safezoneW;
+			w = 0.13 * safezoneW;
 			h = 0.066 * safezoneH;
 
-			onLBSelChanged = "call compile preprocessfile 'Scripts\Armory\Functions\PXG_Refresh_Factions.sqf'";
+			onLBSelChanged = " call compile preprocessfile 'Scripts\Armory\Functions\PXG_Refresh_Factions.sqf'";
 		};
 		class sideText: RscText
 		{
@@ -87,28 +90,5 @@ class armoryDialog
 			w = 0.0652326 * safezoneW;
 			h = 0.044 * safezoneH;
 		};
-		class variantText: RscText
-		{
-			idc = 1005;
-			text = "Variant"; //--- ToDo: Localize;
-			x = 0.442442 * safezoneW + safezoneX;
-			y = 0.39 * safezoneH + safezoneY;
-			w = 0.0575581 * safezoneW;
-			h = 0.044 * safezoneH;
-		};
-		class variantList: RscListbox
-		{
-			idc = 1502;
-			x = 0.442442 * safezoneW + safezoneX;
-			y = 0.445 * safezoneH + safezoneY;
-			w = 0.0690698 * safezoneW;
-			h = 0.22 * safezoneH;
-
-			onLBSelChanged = "call compile preprocessfile 'Scripts\Armory\Functions\PXG_Refresh_Loadouts.sqf'";
-		};
-////////////////////////////////////////////////////////
-// GUI EDITOR OUTPUT END
-////////////////////////////////////////////////////////
-
 	};
 };

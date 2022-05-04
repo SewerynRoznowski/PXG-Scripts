@@ -53,4 +53,4 @@ _gearPath = _gearPath + _faction + "\" + _variantEra + "\gear.sqf";
 // configure radios
 [_side, _faction, _variant, _loadout] call compile preprocessFile "scripts\Armory\Functions\PXG_Configure_RadioChannels.sqf";
 
-hint format ["%1, %2, %3", _faction, _variant, _loadout];
+//hint format ["%1, %2, %3", _faction, _variant, _loadout];

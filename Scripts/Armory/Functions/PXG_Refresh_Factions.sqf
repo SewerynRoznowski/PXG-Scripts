@@ -11,13 +11,23 @@ switch (_selectedSide) do {
 };
 
 _factionsScriptPath = _factionsScriptPath + _side;
-
 _factionsArray = call compile preprocessfile _factionsScriptPath;
 
-lbClear 1501;
-lbClear 1502;
-lbClear 1503;
+tvClear 1501;
+tvClear 1503;
 
 {
-	lbAdd [1501, _x];
+	tvAdd [1501,[], _x];
+	_variantScriptPath = "Scripts\Factions\";
+	_variantScriptPath = _variantScriptPath + _x + "\variantlist.sqf";
+	_variantArray = call compile preprocessfile _variantScriptPath;
+	_factionPlaceInTree = _factionsArray find _x;
+	{
+		tvAdd [1501,[_factionPlaceInTree],_x];
+		
+	} forEach _variantArray;
+
+
 }	forEach _factionsArray;
+
+

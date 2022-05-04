@@ -1,3 +1,5 @@
-_availableFactions = [];
+_availableFactions = [
+	"Serbian Brigade"
+];
 
 _availableFactions
