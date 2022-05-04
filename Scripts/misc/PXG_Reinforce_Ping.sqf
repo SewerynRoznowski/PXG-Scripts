@@ -2,17 +2,16 @@
 // Pings PL or Logi when people are close to staging or mobile reinsert 
 
 // Start loop
-hint "ping starts";
-waitUntil {time > 30};
+waitUntil {time > 10};
 while {true} do {
 	 // Check if PL or Logi is in game.
-	if (isNil B_plt_plt) then {_plt = 0;} else {_plt = 1;};
-	if (isNil B_plt_logi1) then {_logi1 = 0;} else {_logi1 = 1;};
-	if (isNil B_plt_logi2) then {_logi2 = 0;} else {_logi2 = 1;};
+	_plt = if (isNil "B_plt_plt") then {false} else {true};
+	_logi1 = if (isNil "B_plt_logi1") then {false} else {true};
+	_logi2 = if (isNil "B_plt_logi2") then {false} else {true};
 
 	// Check for persons near staging area
-	_stagingArray = nearestObjects ["Staging_Area", ["Person"], 50];
-	_mobileArray = nearestObjects ["forward_tactical_reinsert_base", ["Person"], 50];
+	_stagingArray = nearestObjects [ getPosATL Staging_Area, ["man"], 50];
+	_mobileArray = nearestObjects [ getPosATL forward_tactical_reinsert_base, ["man"], 50];
 
 	// initialize counters 
 	_stagingCounter = 0; 
@@ -23,9 +22,9 @@ while {true} do {
 	{if (isPlayer _x) then {_mobileCounter = _mobileCounter + 1;} } forEach _mobileArray;
 
 	if (_stagingCounter > 0 or _mobileCounter > 0 ) then {
-		if (_logi1 == 1) then { format [" Players at staging: %1 \n Players at mobile spawn: %2", _stagingCounter, _mobileCounter] remoteExec ["hint", B_plt_logi1]; };
-		if (_logi2 == 1) then { format [" Players at staging: %1 \n Players at mobile spawn: %2", _stagingCounter, _mobileCounter] remoteExec ["hint", B_plt_logi2]; };
-		if (_plt == 1) then { format [" Players at staging: %1 \n Players at mobile spawn: %2", _stagingCounter, _mobileCounter] remoteExec ["hint", B_plt_plt]; };
+		if (_logi1 == true) then { format [" Players at staging: %1 \n Players at mobile spawn: %2", _stagingCounter, _mobileCounter] remoteExec ["hint", B_plt_logi1]; };
+		if (_logi2 == true) then { format [" Players at staging: %1 \n Players at mobile spawn: %2", _stagingCounter, _mobileCounter] remoteExec ["hint", B_plt_logi2]; };
+		if (_plt == true) then { format [" Players at staging: %1 \n Players at mobile spawn: %2", _stagingCounter, _mobileCounter] remoteExec ["hint", B_plt_plt]; };
 	};
 	sleep 30;
 };
