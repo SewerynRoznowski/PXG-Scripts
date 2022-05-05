@@ -1,7 +1,6 @@
 // Armoury
-// #include "Scripts\Armory\dialogs\defines.hpp"
-#include "Scripts\Armory\dialogs\dialogclasses.hpp"
-#include "Scripts\Armory\dialogs\control.hpp"
+#include "Scripts\Armory\dialogs\styles.hpp"
+#include "Scripts\Armory\dialogs\armoryDialog.hpp"
 #include "Scripts\Resupply\dialogs\supplySpawnDialog.hpp" 
 #include "Scripts\Motorpool\dialogs\motorpoolDialog.hpp" 
 

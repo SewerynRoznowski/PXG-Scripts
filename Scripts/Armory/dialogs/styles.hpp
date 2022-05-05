@@ -35,3 +35,28 @@ import RscMapControl;
 import RscMapControlEmpty;
 import RscCheckBox;
 
+class PxgGuiBackground: RscFrame 
+{
+	colorBackground[] = {0.1, 0.1, 0.1, 0.7}; 
+	style = 128;
+};
+
+class PxgGuiRscTree: RscTree
+{
+	colorBackground[] = {0,0,0,0.3};
+};
+
+class PxgGuiRscButton: RscButton
+{
+
+};
+
+class PxgGuiRscText: RscText
+{
+
+};
+
+class PxgGuiRscListBox: RscListBox
+{
+
+};

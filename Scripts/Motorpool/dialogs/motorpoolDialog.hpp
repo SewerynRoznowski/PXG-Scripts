@@ -3,12 +3,8 @@ class dialog_motorpool
 	idd = 461922;
 	class controls
 	{
-		////////////////////////////////////////////////////////
-		// GUI EDITOR OUTPUT START (by J. Dimlight, v1.063, #Xinebe)
-		////////////////////////////////////////////////////////
 		
-		
-		class RscFrame_1: RscFrame
+		class RscFrame_1: PxgGuiBackground
 		{
 			idc = -1;
 
@@ -26,11 +22,17 @@ class dialog_motorpool
 			y = 0.225 * safezoneH + safezoneY;
 			w = 0.4125 * safezoneW;
 			h = 0.022 * safezoneH;
-			colorBackground[] = {0.13,0.54,0.21,0.8};
+			colorBackground[] = 			
+			{
+				"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.13])",
+				"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.54])",
+				"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.21])",
+				"(profilenamespace getvariable ['GUI_BCG_RGB_A',0.8])"
+			};
 			sizeEx = 1 * GUI_GRID_H * GUI_GRID_H;
 		};
 		
-		class dim_vehicle_spawnpoint_list: RscListBox
+		class dim_vehicle_spawnpoint_list: PxgGuiRscListBox
 		{
 			idc = 461500;
 
@@ -40,7 +42,7 @@ class dialog_motorpool
 			h = 0.274305 * safezoneH;
 		};
 	
-		class dim_vehicle_list: RscListBox
+		class dim_vehicle_list: PxgGuiRscListBox
 		{
 			idc = 461501;
 
@@ -50,7 +52,7 @@ class dialog_motorpool
 			h = 0.274443 * safezoneH;
 		};
 	
-		class dim_vehicle_faction_list: RscListBox
+		class dim_vehicle_faction_list: PxgGuiRscListBox
 		{
 			idc = 461502;
 			onLBSelChanged = "call compile preprocessfile 'Scripts\Motorpool\Functions\PXG_Refresh_Variants.sqf'";
@@ -61,7 +63,7 @@ class dialog_motorpool
 			h = 0.274305 * safezoneH;
 		};
 		
-		class dim_vehicle_faction_variant_list: RscListbox
+		class dim_vehicle_faction_variant_list: PxgGuiRscListbox
 		{
 			idc = 461503;
 			onLBSelChanged = "call compile preprocessfile 'Scripts\Motorpool\Functions\PXG_Refresh_Vehicles.sqf'";
@@ -72,7 +74,7 @@ class dialog_motorpool
 			h = 0.077 * safezoneH;
 		};
 		
-		class dim_vehicle_faction_side_list: RscListbox
+		class dim_vehicle_faction_side_list: PxgGuiRscListbox
 		{
 			idc = 461504;
 			onLBSelChanged = "call compile preprocessfile 'Scripts\Motorpool\Functions\PXG_Refresh_Factions.sqf'";
@@ -83,7 +85,7 @@ class dialog_motorpool
 			h = 0.066 * safezoneH;
 		};
 		
-		class dim_vehicle_spawn_button: RscButton
+		class dim_vehicle_spawn_button: PxgGuiRscButton
 		{
 			idc = 461600;
 			action = "execVM 'Scripts\Motorpool\Functions\PXG_Spawn_Vehicle.sqf'";
@@ -94,8 +96,5 @@ class dialog_motorpool
 			w = 0.0703127 * safezoneW;
 			h = 0.0624998 * safezoneH;
 		};
-		////////////////////////////////////////////////////////
-		// GUI EDITOR OUTPUT END
-		////////////////////////////////////////////////////////
 	};
 };

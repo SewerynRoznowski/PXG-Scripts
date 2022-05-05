@@ -3,7 +3,7 @@ class armoryDialog
 	idd = 1234;
 	class controls
 	{
-		class baseFrame: RscFrame
+		class baseFrame: PxgGuiBackground
 		{
 			idc = 1800;
 
@@ -11,10 +11,8 @@ class armoryDialog
 			y = 0.236 * safezoneH + safezoneY;
 			w = 0.299302 * safezoneW;
 			h = 0.528 * safezoneH;
-			colorBackground[] = {0.1, 0.1, 0.1, 0.7}; 
-			style = 128;
 		};
-		class factionList: RscTree
+		class factionList: PxgGuiRscTree
 		{
 			idc = 1501;
 
@@ -23,12 +21,10 @@ class armoryDialog
 			w = 0.13 * safezoneW;
 			h = 0.22 * safezoneH;
 
-			colorBackground[] = {0,0,0,0.3};
-
 			onTreeSelChanged = "call compile preprocessfile 'Scripts\Armory\Functions\PXG_Refresh_Loadouts.sqf'";
 
 		};
-		class buttonGetLoadout: RscButton
+		class buttonGetLoadout: PxgGuiRscButton
 		{
 			idc = 1600;
 			action = "[execVM ""Scripts\Armory\Functions\PXG_Request_Loadout.sqf""]";
@@ -39,7 +35,7 @@ class armoryDialog
 			w = 0.0690698 * safezoneW;
 			h = 0.066 * safezoneH;
 		};
-		class loadoutList: RscTree
+		class loadoutList: PxgGuiRscTree
 		{
 			idc = 1503;
 
@@ -48,9 +44,8 @@ class armoryDialog
 			w = 0.13 * safezoneW;
 			h = 0.352 * safezoneH;
 
-			colorBackground[] = {0,0,0,0.3};
 		};
-		class factionsText: RscText
+		class factionsText: PxgGuiRscText
 		{
 			idc = 1000;
 
@@ -60,7 +55,7 @@ class armoryDialog
 			w = 0.0690698 * safezoneW;
 			h = 0.044 * safezoneH;
 		};
-		class loadoutsText: RscText
+		class loadoutsText: PxgGuiRscText
 		{
 			idc = 1001;
 
@@ -71,7 +66,7 @@ class armoryDialog
 			h = 0.044 * safezoneH;
 
 		};
-		class sideList: RscListBox
+		class sideList: PxgGuiRscListBox
 		{
 			idc = 1500;
 			x = 0.358023 * safezoneW + safezoneX;
@@ -81,7 +76,7 @@ class armoryDialog
 
 			onLBSelChanged = " call compile preprocessfile 'Scripts\Armory\Functions\PXG_Refresh_Factions.sqf'";
 		};
-		class sideText: RscText
+		class sideText: PxgGuiRscText
 		{
 			idc = 1004;
 			text = "Side"; //--- ToDo: Localize;
