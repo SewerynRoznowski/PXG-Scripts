@@ -7,16 +7,27 @@ class armoryDialog
 		{
 			idc = 1800;
 
-			x = 0.350349 * safezoneW + safezoneX;
-			y = 0.236 * safezoneH + safezoneY;
-			w = 0.299302 * safezoneW;
+			x = 0.29375 * safezoneW + safezoneX;
+			y = 0.247 * safezoneH + safezoneY;
+			w = 0.4125 * safezoneW;
 			h = 0.528 * safezoneH;
 		};
+		class armoryStructuredText: PxgGuiRscStructuredText
+		{
+			idc = -1;
+			text = "Armory"; //--- ToDo: Localize;
+			x = 0.29375 * safezoneW + safezoneX;
+			y = 0.225 * safezoneH + safezoneY;
+			w = 0.4125 * safezoneW;
+			h = 0.022 * safezoneH;
+			sizeEx = 1 * GUI_GRID_H * GUI_GRID_H;
+		};
+
 		class factionList: PxgGuiRscTree
 		{
 			idc = 1501;
 
-			x = 0.358023 * safezoneW + safezoneX;
+			x = 0.305 * safezoneW + safezoneX;
 			y = 0.445 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
 			h = 0.22 * safezoneH;
@@ -30,10 +41,10 @@ class armoryDialog
 			action = "[execVM ""Scripts\Armory\Functions\PXG_Request_Loadout.sqf""]";
 
 			text = "Get Loadout"; //--- ToDo: Localize;
-			x = 0.358023 * safezoneW + safezoneX;
+			x = 0.305 * safezoneW + safezoneX;
 			y = 0.676 * safezoneH + safezoneY;
 			w = 0.0690698 * safezoneW;
-			h = 0.066 * safezoneH;
+			h = 0.03 * safezoneH;
 		};
 		class loadoutList: PxgGuiRscTree
 		{
@@ -50,7 +61,7 @@ class armoryDialog
 			idc = 1000;
 
 			text = "Factions"; //--- ToDo: Localize;
-			x = 0.358023 * safezoneW + safezoneX;
+			x = 0.305 * safezoneW + safezoneX;
 			y = 0.39 * safezoneH + safezoneY;
 			w = 0.0690698 * safezoneW;
 			h = 0.044 * safezoneH;
@@ -69,7 +80,7 @@ class armoryDialog
 		class sideList: PxgGuiRscListBox
 		{
 			idc = 1500;
-			x = 0.358023 * safezoneW + safezoneX;
+			x = 0.305 * safezoneW + safezoneX;
 			y = 0.313 * safezoneH + safezoneY;
 			w = 0.13 * safezoneW;
 			h = 0.066 * safezoneH;
@@ -80,7 +91,7 @@ class armoryDialog
 		{
 			idc = 1004;
 			text = "Side"; //--- ToDo: Localize;
-			x = 0.358023 * safezoneW + safezoneX;
+			x = 0.305 * safezoneW + safezoneX;
 			y = 0.258 * safezoneH + safezoneY;
 			w = 0.0652326 * safezoneW;
 			h = 0.044 * safezoneH;

@@ -57,7 +57,7 @@ class dialog_motorpool
 			idc = 461502;
 			onLBSelChanged = "call compile preprocessfile 'Scripts\Motorpool\Functions\PXG_Refresh_Variants.sqf'";
 
-			x = 0.342734 * safezoneW + safezoneX;
+			x = 0.305 * safezoneW + safezoneX;
 			y = 0.37152 * safezoneH + safezoneY;
 			w = 0.095 * safezoneW;
 			h = 0.274305 * safezoneH;

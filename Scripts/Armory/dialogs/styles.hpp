@@ -37,7 +37,7 @@ import RscCheckBox;
 
 class PxgGuiBackground: RscFrame 
 {
-	colorBackground[] = {0.1, 0.1, 0.1, 0.7}; 
+	colorBackground[] = {0.1, 0.1, 0.1, 1}; 
 	style = 128;
 };
 
@@ -59,4 +59,16 @@ class PxgGuiRscText: RscText
 class PxgGuiRscListBox: RscListBox
 {
 
+};
+
+class PxgGuiRscStructuredText: RscStructuredText
+{
+	colorBackground[] = 			
+	{
+		"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.13])",
+		"(profilenamespace getvariable ['GUI_BCG_RGB_G',0.54])",
+		"(profilenamespace getvariable ['GUI_BCG_RGB_B',0.21])",
+		"(profilenamespace getvariable ['GUI_BCG_RGB_A',0.8])"
+	};
+	sizeEx = 1 * GUI_GRID_H * GUI_GRID_H;
 };

@@ -1,3 +1,5 @@
+// Gives players ACE permisions for MEDIC and ENGINEER
+
 params["_side","_faction","_variant", "_loadout"]; 
 
 switch (_loadout) do {

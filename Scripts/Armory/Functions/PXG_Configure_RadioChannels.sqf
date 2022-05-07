@@ -4,7 +4,7 @@ params["_side","_faction","_variant", "_loadout"];
 _srCh = 1;
 _lrCh = 1;
 
-// Gets slot I
+// Gets slot ID 
 _slotGroup = player getVariable "PXG_Slot_Group"; 
 _slotRole = player getVariable "PXG_Slot_Role";
 
@@ -34,6 +34,7 @@ switch (_slotGroup) do {
 	case "air5": {_lrCh = 2};
 };
 
+// Wait for all radios to initialize 
 waitUntil { ([] call acre_api_fnc_isInitialized) };
 
 /// Check for radio type

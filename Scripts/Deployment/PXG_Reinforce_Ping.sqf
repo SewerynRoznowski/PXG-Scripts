@@ -10,7 +10,7 @@ while {true} do {
 	_logi2 = if (isNil "B_plt_logi2") then {false} else {true};
 
 	// Check for persons near staging area
-	_stagingArray = nearestObjects [ getPosATL Staging_Area, ["man"], 50];
+	_stagingArray = nearestObjects [ getPosATL StagingArea_1, ["man"], 50];
 	_mobileArray = nearestObjects [ getPosATL forward_tactical_reinsert_base, ["man"], 50];
 
 	// initialize counters 
@@ -21,6 +21,7 @@ while {true} do {
 	{if (isPlayer _x) then {_stagingCounter = _stagingCounter + 1;} } forEach _stagingArray;
 	{if (isPlayer _x) then {_mobileCounter = _mobileCounter + 1;} } forEach _mobileArray;
 
+	// Ping logi and PL 
 	if (_stagingCounter > 0 or _mobileCounter > 0 ) then {
 		if (_logi1 == true) then { format [" Players at staging: %1 \n Players at mobile spawn: %2", _stagingCounter, _mobileCounter] remoteExec ["hint", B_plt_logi1]; };
 		if (_logi2 == true) then { format [" Players at staging: %1 \n Players at mobile spawn: %2", _stagingCounter, _mobileCounter] remoteExec ["hint", B_plt_logi2]; };
