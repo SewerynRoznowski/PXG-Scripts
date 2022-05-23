@@ -1,100 +1,112 @@
 class armoryDialog
 {
-	idd = 1234;
+	idd = 431234;
 	class controls
 	{
-		class baseFrame: PxgGuiBackground
+		class armoryBaseFrame: PxgGuiBackground
 		{
-			idc = 1800;
+			idc = -1;
 
-			x = 0.29375 * safezoneW + safezoneX;
-			y = 0.247 * safezoneH + safezoneY;
-			w = 0.4125 * safezoneW;
-			h = 0.528 * safezoneH;
+			x = 0.29 * safezoneW + safezoneX;
+			y = 0.25 * safezoneH + safezoneY;
+			w = 0.28 * safezoneW;
+			h = 0.48 * safezoneH;
 		};
 		class armoryStructuredText: PxgGuiRscStructuredText
 		{
 			idc = -1;
 			text = "Armory"; //--- ToDo: Localize;
-			x = 0.29375 * safezoneW + safezoneX;
-			y = 0.225 * safezoneH + safezoneY;
-			w = 0.4125 * safezoneW;
+			x = 0.29 * safezoneW + safezoneX;
+			y = 0.227 * safezoneH + safezoneY;
+			w = 0.28 * safezoneW;
 			h = 0.022 * safezoneH;
 			sizeEx = 1 * GUI_GRID_H * GUI_GRID_H;
 		};
-
-		class factionList: PxgGuiRscTree
+		class armorySideText: PxgGuiRscText
 		{
-			idc = 1501;
+			idc = 431004;
+			text = "1. Side"; //--- ToDo: Localize;
+			x = 0.30 * safezoneW + safezoneX;
+			y = 0.26 * safezoneH + safezoneY;
+			w = 0.06 * safezoneW;
+			h = 0.04 * safezoneH;
+		};
+		class armoryFactionsText: PxgGuiRscText
+		{
+			idc = 431000;
 
-			x = 0.305 * safezoneW + safezoneX;
-			y = 0.445 * safezoneH + safezoneY;
-			w = 0.13 * safezoneW;
-			h = 0.22 * safezoneH;
+			text = "2. Faction"; //--- ToDo: Localize;
+			x = 0.30 * safezoneW + safezoneX;
+			y = 0.38 * safezoneH + safezoneY;
+			w = 0.06 * safezoneW;
+			h = 0.04 * safezoneH;
+		};
+		class armoryLoadoutsText: PxgGuiRscText
+		{
+			idc = 431001;
+
+			text = "3. Loadout"; //--- ToDo: Localize;
+			x = 0.44 * safezoneW + safezoneX;
+			y = 0.26 * safezoneH + safezoneY;
+			w = 0.06 * safezoneW;
+			h = 0.04 * safezoneH;
+
+		};
+		class armorySideList: PxgGuiRscListBox
+		{
+			idc = 431500;
+			x = 0.30 * safezoneW + safezoneX;
+			y = 0.31 * safezoneH + safezoneY;
+			w = 0.12 * safezoneW;
+			h = 0.06 * safezoneH;
+
+			onLBSelChanged = " call compile preprocessfile 'Scripts\Armory\Functions\PXG_Refresh_Factions.sqf'";
+		};
+		class armoryFactionList: PxgGuiRscTree
+		{
+			idc = 431501;
+
+			x = 0.30 * safezoneW + safezoneX;
+			y = 0.43 * safezoneH + safezoneY;
+			w = 0.12 * safezoneW;
+			h = 0.28 * safezoneH;
 
 			onTreeSelChanged = "call compile preprocessfile 'Scripts\Armory\Functions\PXG_Refresh_Loadouts.sqf'";
 
 		};
-		class buttonGetLoadout: PxgGuiRscButton
+		class armoryLoadoutList: PxgGuiRscTree
 		{
-			idc = 1600;
+			idc = 431503;
+
+			x = 0.44 * safezoneW + safezoneX;
+			y = 0.31 * safezoneH + safezoneY;
+			w = 0.12 * safezoneW;
+			h = 0.4 * safezoneH;
+
+		};
+		class armoryButtonGetLoadout: PxgGuiRscButton
+		{
+			idc = 431600;
 			action = "[execVM ""Scripts\Armory\Functions\PXG_Request_Loadout.sqf""]";
 
 			text = "Get Loadout"; //--- ToDo: Localize;
-			x = 0.305 * safezoneW + safezoneX;
-			y = 0.676 * safezoneH + safezoneY;
-			w = 0.0690698 * safezoneW;
-			h = 0.03 * safezoneH;
+
+			x = 0.29 * safezoneW + safezoneX;
+			y = 0.73 * safezoneH + safezoneY;
+			w = 0.06 * safezoneW;
+			h = 0.02 * safezoneH;
 		};
-		class loadoutList: PxgGuiRscTree
+		class armoryButtonCloseDialog: PxgGuiRscButton
 		{
-			idc = 1503;
+			idc = 431601;
+			action = "closeDialog 2;";
+
+			text = "Close";
 
 			x = 0.51 * safezoneW + safezoneX;
-			y = 0.313 * safezoneH + safezoneY;
-			w = 0.13 * safezoneW;
-			h = 0.352 * safezoneH;
-
-		};
-		class factionsText: PxgGuiRscText
-		{
-			idc = 1000;
-
-			text = "Factions"; //--- ToDo: Localize;
-			x = 0.305 * safezoneW + safezoneX;
-			y = 0.39 * safezoneH + safezoneY;
-			w = 0.0690698 * safezoneW;
-			h = 0.044 * safezoneH;
-		};
-		class loadoutsText: PxgGuiRscText
-		{
-			idc = 1001;
-
-			text = "Loadouts"; //--- ToDo: Localize;
-			x = 0.51 * safezoneW + safezoneX;
-			y = 0.258 * safezoneH + safezoneY;
-			w = 0.0498837 * safezoneW;
-			h = 0.044 * safezoneH;
-
-		};
-		class sideList: PxgGuiRscListBox
-		{
-			idc = 1500;
-			x = 0.305 * safezoneW + safezoneX;
-			y = 0.313 * safezoneH + safezoneY;
-			w = 0.13 * safezoneW;
-			h = 0.066 * safezoneH;
-
-			onLBSelChanged = " call compile preprocessfile 'Scripts\Armory\Functions\PXG_Refresh_Factions.sqf'";
-		};
-		class sideText: PxgGuiRscText
-		{
-			idc = 1004;
-			text = "Side"; //--- ToDo: Localize;
-			x = 0.305 * safezoneW + safezoneX;
-			y = 0.258 * safezoneH + safezoneY;
-			w = 0.0652326 * safezoneW;
-			h = 0.044 * safezoneH;
+			y = 0.73 * safezoneH + safezoneY;
+			w = 0.06 * safezoneW;
+			h = 0.02 * safezoneH;
 		};
 	};
 };

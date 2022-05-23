@@ -21,6 +21,3 @@ _deploymentPositions = [Briefing];
 {
 	_x addAction ["Deployment", {createDialog "deploymentDialog"}];
 } forEach _deploymentPositions;
-
-// Save the list of deployment positions as a global variable for use in deployment dialog
-missionNamespace setVariable ["Pxg_Deployment_Positions", _deploymentPositions ,true];

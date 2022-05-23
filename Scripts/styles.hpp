@@ -72,3 +72,8 @@ class PxgGuiRscStructuredText: RscStructuredText
 	};
 	sizeEx = 1 * GUI_GRID_H * GUI_GRID_H;
 };
+
+class PxgGuiRscPicture: RscPictureKeepAspect
+{
+	    colorText[] = {1,1,1,1};
+};

@@ -36,6 +36,8 @@ _actionBackpackOnBack = ["backpackOnBack", "Backpack on Back", "\a3\ui_f\data\IG
 player addEventHandler ["Killed", {player setVariable ["Chestpack_pack", nil];}];
 
 // Adds event handler to give new loadout after respawn
-player addEventHandler ["Respawn", { [player getVariable "PXG_Player_Side", player getVariable "PXG_Player_Faction", player getVariable "PXG_Player_Variant", player getVariable "PXG_Player_Loadout" ] call compile preprocessfile "scripts\Armory\Functions\PXG_Recieve_Loadout.sqf" } ];
-call compile preprocessfile "scripts\Armory\Functions\PXG_Set_SlotID.sqf";
+_deploymentInit = execVM "scripts\Deployment\Init\deploymentinitPlayer.sqf";
+execVM "scripts\Armory\Functions\PXG_Set_SlotID.sqf";
+player addEventHandler ["Respawn", {  execVM "scripts\Armory\Functions\PXG_Respawn_Loadout.sqf" } ];
+
 

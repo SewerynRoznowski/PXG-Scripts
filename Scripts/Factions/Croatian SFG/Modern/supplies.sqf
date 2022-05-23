@@ -5,10 +5,16 @@ _resupplyAvailable = [
 			["rhsgref_30Rnd_556x45_vhs2_t",40]
 		]
 	],
-	["DMR/LMG Resupply",
+	["LMG Resupply",
 		[
-			["ACE_20Rnd_762x61_M993_AP_Mag",20],
-			["rhsusf_200Rnd_556x45_M855_mixed_box",10]
+			["rhsusf_200Rnd_556x45_M855_mixed_box",30]
+		]
+	],
+	["MMG Resupply",
+		[
+			["rhsusf_100Rnd_762x51_m61_ap",10],
+			["rhsusf_100Rnd_762x51_m62_tracer",10],
+			["rhsusf_100Rnd_762x51_m80a1epr",10]
 		]
 	],
 	["LAT Resupply",
@@ -18,7 +24,7 @@ _resupplyAvailable = [
 	],
 	["MAT Resupply",
 		[
-			["MRWAS_HEAT_F",10]
+			["MRAWS_HEAT_F",10]
 		]
 	],
 	["Hand Grenades",
@@ -94,6 +100,11 @@ _resupplyAvailable = [
 		[
 			["ACE_Clacker",10],
 			["ACE_M26_Clacker",10]
+		]
+	],
+	["Parachutes",
+		[
+			["B_Parachute", 20]
 		]
 	]
 	

@@ -27,7 +27,7 @@ switch (_loadout) do {
 	};
 	case "sup_mmg_g": {player addWeapon "rhs_weap_fnmag";
 					   player addPrimaryWeaponItem "hlc_muzzle_MAG58_Brake";
-					   player addPrimaryWeaponItem "rhsusf_acc_ACOG2_USMC"
+					   player addPrimaryWeaponItem "rhsusf_acc_ELCAN"
 	};
 };
 

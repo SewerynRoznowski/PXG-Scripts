@@ -1,11 +1,14 @@
 // Get selected item from faction list
- _indexFaction = tvCurSel 1501;
+ _indexFaction = tvCurSel 431501;
  _faction = [_indexFaction select 0];
 
+// Prevents error about missing SQF if player selects faction rather than variant from tree list 
+if (count _indexFaction < 2) exitwith {};
+
 // Get faction name 
-_faction = tvText [1501, _faction];
+_faction = tvText [431501, _faction];
 // Get variant name
-_variant = tvText [1501, _indexFaction];
+_variant = tvText [431501, _indexFaction];
 
 // Split variant name to get variant era 
 _variantArray = _variant splitString " ";
@@ -25,10 +28,10 @@ _loadoutsText = _loadoutsArray select 0;
 _loadoutsData = _loadoutsArray select 1; 
 
 // Clear loadout tree list 
-tvClear 1503;
+tvClear 431503;
 {
 	// Add element to tree list
-	tvAdd [1503, [], _x];
+	tvAdd [431503, [], _x];
 	// Position of element in tree list
 	_parentElement = _forEachIndex; 
 	// Get list of role names for element 
@@ -39,11 +42,16 @@ tvClear 1503;
 	_rolesDataArray = _rolesDataArray select _parentElement;
 	{	
 		// Fill tree list with roles 
-		tvAdd [1503, [_parentElement], _x];
+		tvAdd [431503, [_parentElement], _x];
 	} forEach _rolesArray;
 	{
 		// Set Data for roles in tree list 
-		tvSetData [1503, [_parentElement, _forEachIndex], _x];
+		tvSetData [431503, [_parentElement, _forEachIndex], _x];
 	} forEach _rolesDataArray;
 
 }	forEach _elementsArray;
+
+_loadoutMemory = player getVariable ["PXG_Armory_Memory_Loadout", [-1,-1]];
+if (_loadoutMemory select 0 != -1) then {tvSetCurSel [431503, _loadoutMemory]};
+
+

@@ -20,7 +20,7 @@ _deploymentPositions = missionNamespace getVariable "Pxg_Deployment_Positions";
 		case "Briefing": {". Briefing"};
 		default {". FOB"};
 	};
-	_deploymentNumber = _forEachIndex;
+	_deploymentNumber = _forEachIndex + 1;
 	_deploymentName = str _deploymentNumber + _deploymentName;
 	lbAdd [441502, _deploymentName];
 } forEach _deploymentPositions; 

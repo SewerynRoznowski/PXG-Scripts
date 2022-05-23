@@ -130,6 +130,11 @@ _resupplyAvailable = [
 			["ACE_Clacker",10],
 			["ACE_M26_Clacker",10]
 		]
+	],
+	["Parachutes",
+		[
+			["B_Parachute", 20]
+		]
 	]
 	
 ];

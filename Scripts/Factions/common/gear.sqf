@@ -11,6 +11,7 @@ player addItemToVest "ACE_MapTools";
 player addItemToVest "ACE_EarPlugs";
 player addItemToVest "ACE_CableTie";
 player addItemToVest "ACE_CableTie";
+player addItemToBackpack "ACE_Fortify";
 player addItemToBackpack "ACE_EntrenchingTool";
 
 switch (_loadout) do {
