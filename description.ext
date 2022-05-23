@@ -1,6 +1,7 @@
 // Armoury
-#include "Scripts\Armory\dialogs\defines.hpp"
-#include "Scripts\Armory\dialogs\control.hpp"
+#include "Scripts\styles.hpp"
+#include "Scripts\Deployment\Dialogs\deploymentDialog.hpp"
+#include "Scripts\Armory\dialogs\armoryDialog.hpp"
 #include "Scripts\Resupply\dialogs\supplySpawnDialog.hpp" 
 #include "Scripts\Motorpool\dialogs\motorpoolDialog.hpp" 
 
@@ -73,13 +74,9 @@ disableChannels[] = {
  	
  
 
-// Garbage collector					
-wreckLimit = 5;											// Limit before removal is triggered
-wreckRemovalMinTime = 120;								// Min time before removal
-wreckRemovalMaxTime = 300;								// Max time before removal
-corpseLimit = 10;										// Limit before removal is triggered		
-corpseRemovalMinTime = 60;								// Min time before removal
-corpseRemovalMaxTime = 120;								// Max time before removal
+// Garbage collector
+wreckManagerMode = 0;					
+corpseManagerMode = 0;								
 
 respawn=3;
 respawnDelay=10;

@@ -2,10 +2,9 @@ params["_side","_faction","_variant", "_loadout"];
 
 // add primary weapon
 switch (_loadout) do {
-	default { player addWeapon "hlc_rifle_RU556";
-			  player addPrimaryWeaponItem "ACE_muzzle_mzls_L";
-			  player addPrimaryWeaponItem "rhsusf_acc_g33_T1";
-			  player addPrimaryWeaponItem "rhsusf_acc_grip2_tan"
+	default { player addWeapon "rhs_weap_m4a1_blockII_d";
+			  player addPrimaryWeaponItem "UK3CB_BAF_TA31F";
+			  player addPrimaryWeaponItem "rhsusf_acc_kac_grip"
 	};
 	case "plt";
 	case "sqd_ld";
@@ -14,9 +13,10 @@ switch (_loadout) do {
 					 player addPrimaryWeaponItem "ACE_muzzle_mzls_L";
 					 player addPrimaryWeaponItem "rhsusf_acc_g33_T1";
 	};
-	case "sqd_ar": {player addWeapon "LMG_Mk200_F";
-					player addPrimaryWeaponItem "ACE_muzzle_mzls_H";
-					player addPrimaryWeaponItem "BWA3_optic_EOTech552_tan"
+	case "sqd_ar": {player addWeapon "hlc_lmg_mk46mod1";
+					player addPrimaryWeaponItem "ACE_muzzle_mzls_L";
+					player addPrimaryWeaponItem "BWA3_optic_EOTech552_tan";
+					player addPrimaryWeaponItem "hlc_grip_SAW_Grip1"
 	};
 	case "rcn_dmr": {player addWeapon "rhs_weap_sr25_ec";
 					 player addPrimaryWeaponItem "hlc_muzzle_Gunfighter_comp";

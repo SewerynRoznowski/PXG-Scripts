@@ -123,10 +123,35 @@ _resupplyAvailable = [
 			["ACE_quickclot", 30]
 		]
 	],
+	["Vehicle Resupply 7.62mm",
+		[
+			["UK3CB_BAF_762_200Rnd_T",20]
+		]
+	],
+	["Vehicle Resupply 12.7mm",
+		[
+			["UK3CB_BAF_127_100Rnd",10]
+		]
+	],
+	["Vehicle Resupply 40mm",
+		[
+			["UK3CB_BAF_32Rnd_40mm_G_Box",10]
+		]
+	],
+	["Vehicle Resupply Milan",
+		[
+			["UK3CB_BAF_1Rnd_Milan",4]
+		]
+	],
 	["Detonators",
 		[
 			["ACE_Clacker",10],
 			["ACE_M26_Clacker",10]
+		]
+	],
+	["Parachutes",
+		[
+			["B_Parachute", 20]
 		]
 	]
 	

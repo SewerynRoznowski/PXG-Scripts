@@ -1,5 +1,6 @@
 params["_side","_faction","_variant", "_loadout"]; 
 
+// Split variant name to get era and camopattern 
 _variantArray = _variant splitString " ";
 _variantEra = _variantArray #1;
 _variantCamo = _variantArray #0;
@@ -14,15 +15,19 @@ removeVest player;
 removeBackpack player;
 removeHeadgear player;
 
+// Path for uniform script 
 _uniformPath = "Scripts\Factions\";
 _uniformPath = _uniformPath + _faction + "\" + _variantEra + "\uniforms_" + _variantCamo + ".sqf";
 
+// Path for weapon script 
 _weaponsPath = "Scripts\Factions\";
 _weaponsPath = _weaponsPath + _faction + "\" + _variantEra + "\weapons.sqf";
 
+// Path for ammo script 
 _ammoPath = "Scripts\Factions\";
 _ammoPath = _ammoPath + _faction + "\" + _variantEra + "\ammo.sqf";
 
+// Path for gear script
 _gearPath = "Scripts\Factions\";
 _gearPath = _gearPath + _faction + "\" + _variantEra + "\gear.sqf";
 
@@ -53,4 +58,4 @@ _gearPath = _gearPath + _faction + "\" + _variantEra + "\gear.sqf";
 // configure radios
 [_side, _faction, _variant, _loadout] call compile preprocessFile "scripts\Armory\Functions\PXG_Configure_RadioChannels.sqf";
 
-hint format ["%1, %2, %3", _faction, _variant, _loadout];
+//hint format ["%1, %2, %3", _faction, _variant, _loadout];

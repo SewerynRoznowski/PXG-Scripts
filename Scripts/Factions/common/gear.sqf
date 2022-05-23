@@ -11,6 +11,7 @@ player addItemToVest "ACE_MapTools";
 player addItemToVest "ACE_EarPlugs";
 player addItemToVest "ACE_CableTie";
 player addItemToVest "ACE_CableTie";
+player addItemToBackpack "ACE_Fortify";
 player addItemToBackpack "ACE_EntrenchingTool";
 
 switch (_loadout) do {
@@ -42,6 +43,8 @@ if (_variantEra == "Late") then {
 		case "sqd_ld";
 		case "rcn_ld";
 		case "sup_mmg_l";
+		case "sup_hmg_l";
+		case "sup_gmg_l";
 		case "sup_mat_l";
 		case "sup_hat_l";
 		case "sup_mor_l": {player addItemToUniform "ACE_DAGR"};

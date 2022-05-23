@@ -1,3 +1,5 @@
-_availableFactions = [];
+_availableFactions = [
+	"Task Force International"
+];
 
 _availableFactions
