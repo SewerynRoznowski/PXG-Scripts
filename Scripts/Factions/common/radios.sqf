@@ -16,6 +16,7 @@ if (_variantEra == "Early") then {
 		case "sup_gmg_l";
 		case "sup_mat_l";
 		case "sup_hat_l";
+		case "sup_aa_l";
 		case "sup_mor_l":{player addItemToUniform "ACRE_PRC152"};
 		case "pil": {player addItemToUniform "ACRE_PRC152"};
 	};
@@ -40,6 +41,7 @@ if (_variantEra == "Late") then {
 		case "sup_gmg_l";
 		case "sup_mat_l";
 		case "sup_hat_l";
+		case "sup_aa_l";
 		case "sup_mor_l":{
 			player addItemToUniform "ACRE_PRC343";
 			player addItemToUniform "ACRE_PRC152"
@@ -67,6 +69,7 @@ if (_variantEra == "Modern" || _variantEra == "Future") then {
 		case "sup_gmg_l";
 		case "sup_mat_l";
 		case "sup_hat_l";
+		case "sup_aa_l";
 		case "sup_drone";
 		case "sup_ew";
 		case "sup_mor_l":{

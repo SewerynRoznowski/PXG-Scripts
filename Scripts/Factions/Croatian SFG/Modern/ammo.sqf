@@ -43,6 +43,9 @@ switch (_loadout) do {
 	case "sup_mat_l": {
 		for "_i" from 1 to 3 do { player addItemToBackpack "MRAWS_HEAT_F"};
 	};
+	case "sup_aa_l": {
+		for "_i" from 1 to 3 do { player addItemToBackpack "rhs_fim92_mag"};
+	};
 };
 
 // add other ammo 
@@ -50,6 +53,9 @@ switch (_loadout) do {
 	default {};
 	case "sup_mat_g": {
 		for "_i" from 1 to 2 do { player addItemToBackpack "MRAWS_HEAT_F"};
+	};
+	case "sup_aa_g": {
+		for "_i" from 1 to 2 do { player addItemToBackpack "rhs_fim92_mag"};
 	};
 };
 

@@ -6,6 +6,7 @@ _availableFactions = [
 	"Hellenic Armed Forces", 
 	"Portuguese Commandos", 
 	"US Army", 
+	"Bundeswehr",
 	"NATO"
 ];
 

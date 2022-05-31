@@ -47,6 +47,7 @@ if (_variantEra == "Late") then {
 		case "sup_gmg_l";
 		case "sup_mat_l";
 		case "sup_hat_l";
+		case "sup_aa_l";
 		case "sup_mor_l": {player addItemToUniform "ACE_DAGR"};
 	};
 
@@ -66,6 +67,8 @@ if (_variantEra == "Late") then {
 		case "sup_mat_l";
 		case "sup_mat_g";
 		case "sup_hat_l";
+		case "sup_aa_l";
+		case "sup_aa_g";
 		case "sup_hat_g";
 		case "sup_mor_l";
 		case "sup_mor_g":{ player addWeapon "ACE_Vector"};
@@ -102,6 +105,8 @@ if (_variantEra == "Modern") then {
 		case "sup_mat_g";
 		case "sup_hat_l";
 		case "sup_hat_g";
+		case "sup_aa_l";
+		case "sup_aa_g";
 		case "sup_mor_l";
 		case "sup_mor_g":{ player addWeapon "ACE_Vector"};
 		case "plt";
@@ -137,6 +142,8 @@ if (_variantEra == "Future") then {
 		case "sup_mat_g";
 		case "sup_hat_l";
 		case "sup_hat_g";
+		case "sup_aa_l";
+		case "sup_aa_g";
 		case "sup_mor_l";
 		case "sup_mor_g":{ player addWeapon "ACE_Vector"};
 		case "plt";

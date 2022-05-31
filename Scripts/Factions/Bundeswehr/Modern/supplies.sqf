@@ -1,48 +1,54 @@
 _resupplyAvailable = [
 	["Rifle Resupply",
 		[
-			["rhsgref_30Rnd_556x45_vhs2",40],
-			["rhsgref_30Rnd_556x45_vhs2_t",40]
+			["BWA3_30Rnd_556x45_G36",35],
+			["BWA3_30Rnd_556x45_G36_Tracer",35]
 		]
 	],
-	["LMG Resupply",
+	["AR Resupply",
 		[
-			["rhsusf_200Rnd_556x45_M855_mixed_box",30]
+			["BWA3_200Rnd_556x45",10],
+			["BWA3_200Rnd_556x45_Tracer",10]
 		]
 	],
 	["MMG Resupply",
 		[
-			["rhsusf_100Rnd_762x51_m61_ap",10],
-			["rhsusf_100Rnd_762x51_m62_tracer",10],
-			["rhsusf_100Rnd_762x51_m80a1epr",10]
+			["BWA3_120Rnd_762x51_soft",10],
+			["BWA3_120Rnd_762x51_Tracer_soft",10]
+		]
+	],
+	["DMR Resupply",
+		[
+			["BWA3_20Rnd_762x51_G28_AP",30],
+			["BWA3_20Rnd_762x51_G28_Tracer",10]
 		]
 	],
 	["LAT Resupply",
 		[
-			["rhs_weap_M136",8]
+			["BWA3_PzF3_Tandem_Loaded",8]
 		]
 	],
-	["MAT Resupply",
+	["MAT (HEDP)",
 		[
-			["MRAWS_HEAT_F",10]
+			["BWA3_CarlGustav_HEDP",10]
 		]
 	],
-	["AA Resupply",
+	["MAT (HEAT)",
 		[
-			["rhs_fim92_mag",10]
+			["BWA3_CarlGustav_HEAT",10]
 		]
 	],
 	["Hand Grenades",
 		[
-			["HandGrenade",30]
+			["BWA3_DM51A1",30]
 		]
 	],
 	["Smoke Grenades",
 		[
-			["rhs_mag_an_m8hc",20],
-			["SmokeShellRed",5],
-			["SmokeShellGreen",5],
-			["SmokeShellBlue",5]
+			["BWA3_DM25",20],
+			["BWA3_DM32_Red",5],
+			["BWA3_DM32_Green",5],
+			["BWA3_DM32_Blue",5]
 		]
 	],
 	["40mm Grenades",
@@ -99,6 +105,22 @@ _resupplyAvailable = [
 			["ACE_splint", 20],
 			["ACE_bodyBag", 20],
 			["ACE_surgicalKit", 2]
+		]
+	],
+	["Squad Resupply",
+		[
+			["BWA3_30Rnd_556x45_G36",20],
+			["BWA3_30Rnd_556x45_G36_Tracer",20],
+			["BWA3_200Rnd_556x45",5],
+			["BWA3_200Rnd_556x45_Tracer",5],
+			["BWA3_PzF3_Tandem_Loaded",4],
+			["BWA3_DM51A1",15],
+			["BWA3_DM25",10],
+			["1Rnd_HE_Grenade_Shell",15],
+			["1Rnd_Smoke_Grenade_Shell",10],
+			["ACE_bloodIV", 10],
+			["ACE_elasticBandage", 30],
+			["ACE_quickclot", 30]
 		]
 	],
 	["Detonators",

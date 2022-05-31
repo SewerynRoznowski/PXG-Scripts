@@ -38,4 +38,5 @@ switch (_loadout) do {
 	default {};
 	case "sqd_lat": {player addWeapon "rhs_weap_M136"};
 	case "sup_mat_g": {	player addWeapon "launch_MRAWS_green_F"};
+	case "sup_aa_g": {	player addWeapon "rhs_weap_fim92"};
 };
