@@ -3,13 +3,16 @@ params["_side","_faction","_variant", "_loadout"];
 // add primary weapon
 switch (_loadout) do {
 	default { player addWeapon "UK3CB_BAF_L85A3_Grippod";
-			  player addPrimaryWeaponItem "UK3CB_underbarrel_acc_grippod"
+			  player addPrimaryWeaponItem "UK3CB_underbarrel_acc_grippod";
+			  player addPrimaryWeaponItem "optic_mrco"
 	};
 	case "plt";
 	case "sqd_ld";
 	case "rcn_ld";
-	case "sqd_gre":{ player addWeapon "UK3CB_BAF_L85A3_UGL"};
-	case "sqd_ar": {player addWeapon "hlc_lmg_minimi_railed"};
+	case "sqd_gre":{ player addWeapon "UK3CB_BAF_L85A3_UGL";
+			         player addPrimaryWeaponItem "optic_mrco"};
+	case "sqd_ar": {player addWeapon "hlc_lmg_minimi_railed";
+			        player addPrimaryWeaponItem "optic_mrco"};
 	case "rcn_dmr": {player addWeapon "UK3CB_BAF_L129A1";
 					 player addPrimaryWeaponItem "rhsusf_acc_acog_mdo"};
 	case "sup_mmg_g": {	player addWeapon "UK3CB_BAF_L7A2"};
@@ -27,6 +30,6 @@ switch (_loadout) do {
 // add launcher
 switch (_loadout) do {
 	default {};
-	case "sqd_lat": {player addWeapon "rhs_weap_M136"};
+	case "sqd_lat": {player addWeapon "launch_NLAW_F"};
 	case "sup_hat_g": {	player addWeapon "UK3CB_BAF_Javelin_Slung_Tube"};
 };

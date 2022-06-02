@@ -25,7 +25,7 @@ _resupplyAvailable = [
 	],
 	["LAT Resupply",
 		[
-			["rhs_weap_M136",8]
+			["launch_NLAW_F",8]
 		]
 	],
 	["HAT Resupply",

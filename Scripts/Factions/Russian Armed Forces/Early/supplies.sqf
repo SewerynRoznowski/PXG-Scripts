@@ -1,80 +1,86 @@
 _resupplyAvailable = [
 	["Rifle Resupply",
 		[
-			["BWA3_30Rnd_556x45_G36",35],
-			["BWA3_30Rnd_556x45_G36_Tracer",35]
+			["rhs_30Rnd_545x39_7N6_AK",40],
+			["rhs_30Rnd_545x39_AK_green",40]
 		]
 	],
 	["AR Resupply",
 		[
-			["BWA3_200Rnd_556x45",10],
-			["BWA3_200Rnd_556x45_Tracer",10]
+			["UK3CB_RPK74_60rnd_545x39_G",40],
+			["UK3CB_RPK74_60rnd_545x39_GT",40]
 		]
 	],
 	["MMG Resupply",
 		[
-			["BWA3_120Rnd_762x51_soft",10],
-			["BWA3_120Rnd_762x51_Tracer_soft",10]
+			["rhs_100Rnd_762x54mmR_green",18]
 		]
 	],
 	["DMR Resupply",
 		[
-			["BWA3_20Rnd_762x51_G28_AP",30],
-			["BWA3_20Rnd_762x51_G28_Tracer",10]
+			["rhs_10Rnd_762x54mmR_7N1",15],
+			["UK3CB_SVD_10rnd_762x54_GT",15]
 		]
 	],
 	["LAT Resupply",
 		[
-			["BWA3_PzF3_Tandem_Loaded",8]
+			["rhs_weap_rpg26",9]
 		]
 	],
-	["MAT (HEDP)",
+	["MAT OG-7V (HE Frag)",
 		[
-			["BWA3_CarlGustav_HEDP",10]
+			["rhs_rpg7_OG7V_mag",10]
 		]
 	],
-	["MAT (HEAT)",
+	["MAT PG-7V (HEAT)",
 		[
-			["BWA3_CarlGustav_HEAT",10]
+			["rhs_rpg7_PG7V_mag",10]
 		]
 	],
-	["AA Resupply",
+	["MAT PG-7VR (HEAT Tandem)",
 		[
-			["BWA3_Fliegerfaust_Mag",10]
+			["rhs_rpg7_PG7VR_mag",10]
+		]
+	],
+	["MAT TBG-7V (Thermobaric)",
+		[
+			["rhs_rpg7_TBG7V_mag",10]
 		]
 	],
 	["Hand Grenades",
 		[
-			["BWA3_DM51A1",30]
+			["rhs_mag_rgd5",20]
 		]
 	],
 	["Smoke Grenades",
 		[
-			["BWA3_DM25",20],
-			["BWA3_DM32_Red",5],
-			["BWA3_DM32_Green",5],
-			["BWA3_DM32_Blue",5]
+			["rhs_mag_rdg2_white",15],
+			["rhssaf_mag_brd_m83_red",10],
+			["rhssaf_mag_brd_m83_green",10],
+			["rhssaf_mag_brd_m83_blue",10]
 		]
 	],
 	["40mm Grenades",
 		[
-			["1Rnd_HE_Grenade_Shell",30]
+			["hlc_VOG25_AK",20]
 		]
 	],
 	["40mm Smoke Rounds",
 		[
-			["1Rnd_Smoke_Grenade_Shell",20],
-			["1Rnd_SmokeRed_Grenade_Shell",10],
-			["1Rnd_SmokeGreen_Grenade_Shell",10],
-			["1Rnd_SmokeBlue_Grenade_Shell",10]
-		]
-	],
-	["40mm Flares",
-		[
-			["UGL_FlareWhite_F",20],
-			["UGL_FlareCIR_F",20]
+		    ["hlc_GRD_white",15],
+			["hlc_GRD_red",10],
+			["hlc_GRD_green",10],
+			["hlc_GRD_blue",10],
+			["hlc_GRD_purple",10]
 		]
 	],	
+	["40mm Flares",
+		[
+			["rhs_VG40OP_white",15],
+			["rhs_VG40OP_red",10],
+			["rhs_VG40OP_green",10]
+		]
+	],
 	["Explosives",
 		[
 			["DemoCharge_Remote_Mag",10],
@@ -114,15 +120,15 @@ _resupplyAvailable = [
 	],
 	["Squad Resupply",
 		[
-			["BWA3_30Rnd_556x45_G36",20],
-			["BWA3_30Rnd_556x45_G36_Tracer",20],
-			["BWA3_200Rnd_556x45",5],
-			["BWA3_200Rnd_556x45_Tracer",5],
-			["BWA3_PzF3_Tandem_Loaded",4],
-			["BWA3_DM51A1",15],
-			["BWA3_DM25",10],
-			["1Rnd_HE_Grenade_Shell",15],
-			["1Rnd_Smoke_Grenade_Shell",10],
+		
+			["rhs_30Rnd_545x39_7N6_AK",20],
+			["rhs_30Rnd_545x39_AK_green",20],
+			["UK3CB_RPK74_60rnd_545x39_G",20],
+			["rhs_weap_rpg26",4],
+			["rhs_mag_rgd5",10],
+			["rhs_mag_rdg2_white",15],
+			["hlc_VOG25_AK",10],
+			["hlc_GRD_white",15],
 			["ACE_bloodIV", 10],
 			["ACE_elasticBandage", 30],
 			["ACE_quickclot", 30]

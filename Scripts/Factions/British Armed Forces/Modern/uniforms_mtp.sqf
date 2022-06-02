@@ -10,7 +10,10 @@ switch (_loadout) do {
 // add helmet
 switch (_loadout) do {
 	default { player addHeadgear "UK3CB_BAF_H_Mk7_Camo_B"};
-	case "ar_c": {player addHeadgear "UK3CB_BAF_H_CrewHelmet_ESS_A"};
+	case "rcn_ld";
+	case "rcn_drone";
+	case "rcn_dmr": {player addHeadgear "UK3CB_BAF_H_Mk7_Scrim_F"};
+	case "ar_c": {player addHeadgear "UK3CB_BAF_H_CrewHelmet_B"};
 	case "pil": {player addHeadgear "UK3CB_BAF_H_PilotHelmetHeli_A"};
 };
 
@@ -30,7 +33,7 @@ switch (_loadout) do {
 	case "rcn_drone": { player addVest "UK3CB_BAF_V_Osprey_Marksman_A"};
 	case "sup_mor_g": { player addVest "UK3CB_BAF_V_Osprey_Rifleman_C"};
 	case "sqd_eng": { player addVest "UK3CB_BAF_V_Osprey_Rifleman_B"};
-	case "ar_c": { player addVest "UK3CB_BAF_V_PLCE_Webbing_Plate_MTP"};
+	case "ar_c": { player addVest "UK3CB_BAF_V_Osprey_Lite"};
 	case "pil": { player addVest "UK3CB_BAF_V_Pilot_A"};
 };
 
@@ -53,7 +56,7 @@ switch (_loadout) do {
 	case "sqd_eng": { player addBackpack "UK3CB_BAF_B_Bergen_MTP_Sapper_L_A"};
 	case "sup_mor_l": {player addBackpack "B_Mortar_01_support_F"};
 	case "sup_mor_g": {player addBackpack "B_Mortar_01_weapon_F"};
-	case "rcn_drone": {player addBackpack "B_UAV_01_backpack_F"};
-	case "ar_c": { player addBackpack "UK3CB_BAF_B_Bergen_MTP_Engineer_L_A"};
+	case "rcn_drone": {player addBackpack "UK3CB_BAF_B_Bergen_MTP_Rifleman_L_C"};
+	case "ar_c": {};
 	case "pil": {};
 };
