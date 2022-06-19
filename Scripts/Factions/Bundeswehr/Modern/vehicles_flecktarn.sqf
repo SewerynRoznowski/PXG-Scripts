@@ -1,36 +1,46 @@
 _availableVehicles = 
 [
 	["Utility",
-	["UK3CB_BAF_LandRover_Hard_FFR_Sand_A_MTP",
-	"UK3CB_BAF_MAN_HX58_Cargo_Sand_B_DDPM_RM",
-	"UK3CB_BAF_MAN_HX58_Fuel_Sand_DDPM_RM",
-	"UK3CB_BAF_MAN_HX60_Repair_Sand_DDPM_RM",
-	"UK3CB_BAF_MAN_HX60_Transport_Sand_DDPM_RM"]],
+	["BWA3_Eagle_Fleck",
+	"Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu",
+	"rnt_lkw_5t_mil_gl_kat_i_transport_fleck",
+	"rnt_lkw_7t_mil_gl_kat_i_mun_fleck",
+	"rnt_lkw_10t_mil_gl_kat_i_repair_fleck"]],
 	
 	["Armed Car/MRAP",
-	["UK3CB_BAF_LandRover_WMIK_HMG_FFR_Sand_A_MTP",
-	"UK3CB_BAF_LandRover_WMIK_GMG_FFR_Sand_A_MTP",
-	"UK3CB_BAF_LandRover_WMIK_Milan_FFR_Sand_A_MTP"]],
+	["BWA3_Eagle_FLW100_Fleck",
+	"BWA3_Dingo2_FLW200_M2_CG13_Fleck",
+	"BWA3_Dingo2_FLW200_GMW_CG13_Fleck"]],
+
+	["APC",
+	["Redd_Tank_Fuchs_1A4_Jg_Milan_Flecktarn",
+	"Redd_Tank_Fuchs_1A4_Pi_Flecktarn"]],
+
+	["Anti Air",
+	["Redd_Tank_Gepard_1A2_Flecktarn"]],
 	
 	["IFV",
-	["I_APC_Wheeled_03_cannon_F"]], //Doesn't spawn in correct camo
+	["Redd_Marder_1A5_Flecktarn",
+	"BWA3_Puma_Fleck",
+	"Redd_Tank_Wiesel_1A4_MK20_Flecktarn",
+	"Redd_Tank_Wiesel_1A2_TOW_Flecktarn"]],
 	
+	["MBT",
+	["BWA3_Leopard2_Fleck"]],
+	
+	["SPG",
+	["BWA3_Panzerhaubitze2000_Fleck"]],
+
 	["Rotary Transport",
-	["RHS_MELB_MH6M",
-	"UK3CB_BAF_Merlin_HC4_18_DDPM_RM"]],
+	["UK3CB_B_G_UH1H_M240_FIA",
+	"rhsusf_CH53E_USMC_GAU21"]],
 	
-	["Rotary Armed",
-	["RHS_MELB_AH6M",
-	"UK3CB_BAF_Merlin_HC4_18_GPMG_DDPM_RM"]],
-	
-	["Fixed Wing Transport",
-	["RHS_C130J"]],
-	
-	["Fixed Wing Armed",
-	["UK3CB_CW_US_B_LATE_A10"]],
+	["Rotary Attack",
+	["BWA3_Tiger_RMK_Universal",
+	"UK3CB_B_G_UH1H_GUNSHIP_FIA"]],
 	
 	["Misc.",
-	["rhsusf_mrzr4_d"]]
+	["rnt_sppz_2a2_luchs_flecktarn"]]
 	
 ];
 _availableVehicles
